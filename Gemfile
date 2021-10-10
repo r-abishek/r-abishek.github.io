@@ -17,4 +17,6 @@ group :jekyll_plugins do
     gem 'jekyll-archives'
     gem 'kramdown'
     gem 'rouge'
+    # gem 'irb', require: false
+    gem "webrick", "~> 1.7"
 end
