@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Powerful things you can do with the Markdown editor"
-author: sal
+author: abishek
 categories: [ Jekyll, tutorial ]
 image: assets/images/16.jpg
 ---
@@ -44,11 +44,11 @@ There are two types of code elements which can be inserted in Markdown, the firs
 ```css
 .highlight .c {
     color: #999988;
-    font-style: italic; 
+    font-style: italic;
 }
 .highlight .err {
     color: #a61717;
-    background-color: #e3d2d2; 
+    background-color: #e3d2d2;
 }
 ```
 
