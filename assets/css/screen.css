@@ -38,6 +38,14 @@ pre {
     margin-bottom: -rem;
 }
 
+figcaption {
+    text-align: center;
+    font-family: Merriweather;
+    font-size: 1.1rem;
+    line-height: 1.84;
+    color: rgba(0, 0, 0, .8);
+}
+
 .mediumnavigation {
     background: rgba(255, 255, 255, .97);
     box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .15);
@@ -101,6 +109,15 @@ section.recent-posts {
     .navbar-expand-lg .navbar-nav .nav-link {
         padding-right: 0.8rem;
         padding-left: 0.8rem;
+        color: #00ab6b;
+    }
+}
+
+@media (min-width:992px) {
+    .navbar-expand-lg .navbar-nav .nav-link:hover {
+        padding-right: 0.8rem;
+        padding-left: 0.8rem;
+        color: #000000;
     }
 }
 
@@ -369,6 +386,9 @@ blockquote {
 .featured-image {
     display: block;
     margin-bottom: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 .share {
