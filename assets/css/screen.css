@@ -1,7 +1,7 @@
-/* 
-Template Name: Mediumish 
-Copyright: Sal, WowThemes.net, https://www.wowthemes.net 
-License: https://www.wowthemes.net/freebies-license/ 
+/*
+Template Name: Mediumish
+Copyright: Sal, WowThemes.net, https://www.wowthemes.net
+License: https://www.wowthemes.net/freebies-license/
 */
 @media screen and (min-width:1500px) {
     html { font-size:18px; } /* Increase the font size on higher resolutions */
@@ -36,6 +36,14 @@ pre {
     line-height: 1.6;
     color: #333;
     margin-bottom: -rem;
+}
+
+figcaption {
+    text-align: center;
+    font-family: Merriweather;
+    font-size: 1.1rem;
+    line-height: 1.84;
+    color: rgba(0, 0, 0, .8);
 }
 
 .mediumnavigation {
@@ -101,7 +109,28 @@ section.recent-posts {
     .navbar-expand-lg .navbar-nav .nav-link {
         padding-right: 0.8rem;
         padding-left: 0.8rem;
+        color: #00ab6b;
     }
+}
+
+@media (min-width:992px) {
+    .navbar-expand-lg .navbar-nav .nav-link:hover {
+        padding-right: 0.8rem;
+        padding-left: 0.8rem;
+        color: #000000;
+    }
+}
+
+.navbar-nav-dropdown {
+    display: none;
+    position: absolute;
+    list-style: none;
+    padding: 0;
+    background-color: rgb(255,255,255);
+}
+
+.nav-dropdown-link:hover {
+    background-color: rgba(235, 231, 231, 0.788);
 }
 
 .listfeaturedtag {
@@ -162,10 +191,28 @@ section.recent-posts {
     max-height: 100%;
 }
 
+.postlist-box-img-cover {
+    object-fit: cover;
+    width: auto;
+    height: auto;
+    max-height: auto;
+    min-width: 25%;
+    min-height: 25%;
+}
+
 @media (max-width:991px) {
     .featured-box-img-cover {
         height: auto;
         width: 100%;
+    }
+}
+
+@media (max-width:991px) {
+    .postlist-box-img-cover {
+        height: auto;
+        width: auto;
+        min-width: 25%;
+        min-height: 25%;
     }
 }
 
@@ -290,6 +337,11 @@ span.post-read-more a:hover {
 .mediumnavigation .nav-item,
 .dropdown-menu {
     font-size: 0.9rem;
+    position: relative;
+}
+
+.nav-item:hover .navbar-nav-dropdown {
+    display: block;
 }
 
 .mediumnavigation .search-icon {
@@ -300,12 +352,13 @@ span.post-read-more a:hover {
 }
 
 .mediumnavigation .navbar-brand img {
-    max-height: 30px;
+    max-height: 80px;
     margin-right: 5px;
 }
 
 .mainheading h1.sitetitle {
     font-family: Righteous;
+    margin-top: 1rem;
 }
 
 .mainheading h1.posttitle {
@@ -351,6 +404,9 @@ blockquote {
 .featured-image {
     display: block;
     margin-bottom: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 .share {
@@ -398,6 +454,10 @@ blockquote {
 @media (max-width:999px) {
     .featured-box-img-cover {
         height: 359px;
+    }
+
+    .postlist-box-img-cover {
+        height: auto;
     }
 
     .alertbar {

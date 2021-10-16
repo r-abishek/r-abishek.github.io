@@ -77,6 +77,21 @@ post_class: post-template
                 {{content}}
             </div>
 
+            <!-- Post End Image -->
+            {% if page.image_end %}
+
+            <figure>
+            {% if site.lazyimages == "enabled" %}
+            <img class="featured-image img-fluid lazyimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="{% if page.image_end contains "://" %}{{ page.image_end }}{% else %}{{ site.baseurl }}/{{ page.image_end }}{% endif %}" alt="{{ page.image_end_alttext }}">
+            {% else %}
+            <img class="featured-image img-fluid" src="{% if page.image_end contains "://" %}{{ page.image_end }}{% else %}{{ site.baseurl }}/{{ page.image_end }}{% endif %}" alt="{{ page.image_end_alttext }}">
+            {% endif %}
+            <figcaption>{{ page.image_end_alttext }}</figcaption>
+            </figure>
+
+            {% endif %}
+            <!-- Post End Image -->
+
             <!-- Rating -->
             {% if page.rating %}
             <div class="rating mb-4 d-flex align-items-center">
@@ -87,7 +102,7 @@ post_class: post-template
             <!-- Post Date -->
             <p>
             <small>
-                <span class="post-date"><time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time></span>           
+                <span class="post-date"><time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time></span>
                 {% if page.last_modified_at %}
                 (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%b %-d, %Y" }}</time>)
                 {% endif %}
@@ -154,7 +169,7 @@ post_class: post-template
 <!--End Comments
 ================================================== -->
 
-<!-- Review with LD-JSON, adapt it for your needs if you like, but make sure you test the generated HTML source code first: 
+<!-- Review with LD-JSON, adapt it for your needs if you like, but make sure you test the generated HTML source code first:
 https://search.google.com/structured-data/testing-tool/u/0/
 ================================================== -->
 {% if page.rating %}
