@@ -8,15 +8,18 @@ comments: true
 <div class="row justify-content-between">
     <div class="col-md-8 pr-5">
         <p>This page contains my reviews of the books I found most interesting. I mostly read non-fiction - a mix of memoirs, biographies, popular science, history, politics and self-help.</p>
+
+        {% for post in site.posts %}
+            {% if post.hidden == false %}
+                {% include postlistbox.html %}
+            {% endif %}
+        {% endfor %}
+
     </div>
     <div class="col-md-4">
         <div class="sticky-top sticky-top-80">
 
-<!-- Goodreads widget 1 -->
-    <img border="0" alt="Abishek's book recommendations, liked quotes, book clubs, book trivia, book lists (read shelf)" src="https://s.gr-assets.com/images/badge/badge1.jpg" width=125px>
-<!-- Goodreads widget 1 -->
-
-<!-- Goodreads widget 2 -->
+<!-- Goodreads widget -->
       <style type="text/css" media="screen">
         .gr_grid_container {
           /* customize grid container div here. eg: width: 500px; */
@@ -34,7 +37,7 @@ comments: true
       <div id="gr_grid_widget_1634280842">
         <!-- Show static html as a placeholder in case js is not enabled - javascript include will override this if things work -->
             <h2>
-      <a style="text-decoration: none;" rel="nofollow" href="https://www.goodreads.com/review/list/81725177-abishek?shelf=read&utm_medium=api&utm_source=grid_widget">My bookshelf</a>
+      <a style="font-size: 30px; text-decoration: none;" rel="nofollow" href="https://www.goodreads.com/review/list/81725177-abishek?utf8=%E2%9C%93&utf8=%E2%9C%93&ref=nav_mybooks&shelf=read&title=abishek&sort=date_read&order=d" target="_blank">My <img border="0" alt="Abishek's book recommendations, liked quotes, book clubs, book trivia, book lists (read shelf)" src="https://s.gr-assets.com/images/badge/badge1.jpg" width=120px> bookshelf</a>
     </h2>
   <div class="gr_grid_container">
     <div class="gr_grid_book_container"><a title="Bad Blood: Secrets and Lies in a Silicon Valley Startup" rel="nofollow" href="https://www.goodreads.com/book/show/37976541-bad-blood"><img alt="Bad Blood: Secrets and Lies in a Silicon Valley Startup" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1556268702l/37976541._SX98_.jpg" /></a></div>
@@ -52,8 +55,8 @@ comments: true
   </div>
 
       </div>
-      <script src="https://www.goodreads.com/review/grid_widget/81725177.My%20bookshelf?cover_size=medium&hide_link=true&hide_title=&num_books=20&order=d&shelf=read&sort=date_read&widget_id=1634280842" type="text/javascript" charset="utf-8"></script>
-<!-- Goodreads widget 2 -->
+
+<!-- Goodreads widget -->
 
         </div>
     </div>

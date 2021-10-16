@@ -191,10 +191,28 @@ section.recent-posts {
     max-height: 100%;
 }
 
+.postlist-box-img-cover {
+    object-fit: cover;
+    width: auto;
+    height: auto;
+    max-height: auto;
+    min-width: 25%;
+    min-height: 25%;
+}
+
 @media (max-width:991px) {
     .featured-box-img-cover {
         height: auto;
         width: 100%;
+    }
+}
+
+@media (max-width:991px) {
+    .postlist-box-img-cover {
+        height: auto;
+        width: auto;
+        min-width: 25%;
+        min-height: 25%;
     }
 }
 
@@ -436,6 +454,10 @@ blockquote {
 @media (max-width:999px) {
     .featured-box-img-cover {
         height: 359px;
+    }
+
+    .postlist-box-img-cover {
+        height: auto;
     }
 
     .alertbar {
