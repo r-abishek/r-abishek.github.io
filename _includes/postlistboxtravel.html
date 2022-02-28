@@ -3,25 +3,34 @@
 <div class="col-md-12 mb-30px">
     <div class="listfeaturedtag h-100">
         <div class="row h-100">
-            <div class="col-12 col-md-12 col-lg-3 pr-lg-0">
+            <div class="col-12 col-md-12 col-lg-6 pr-lg-0">
                 <div class="h-100">
                     <div class="wrapthumbnail">
-                        <a href="{{ site.baseurl }}{{ post.url }}" target="_blank">
+                        <a href="{% if post.story == true %} {{ site.baseurl }}{{ post.url }} {% else %} {{ post.googleReview }} {% endif %}" target="_blank">
                             {% if site.lazyimages == "enabled" %}
                             <img class="postlist-box-img-cover lazyimg"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="{% if post.image1 contains "://" %}{{ post.image1 }}{% else %}{{ site.baseurl }}/{{ post.image1 }}{% endif %}">
                             {% else %}
-                            <img class="postlist-box-img-cover" src="{% if post.image1 contains "://" %}{{ post.image1 }}{% else %}{{ site.baseurl }}/{{ post.image1 }}{% endif %}">
+                            <div class="imageContainerWithOverlay">
+                                <img class="postlist-box-img-cover" src="{% if post.image1 contains "://" %}{{ post.image1 }}{% else %}{{ site.baseurl }}/{{ post.image1 }}{% endif %}" title="{{ post.image1Caption }}">
+                                <div class="imageOverlay">{{ post.image1Caption }}</div>
+                            </div>
+                            {% include imageCollage/imageCollage_CarlsbadCavernsNationalPark.html %}
+                            <div class="imageContainerWithOverlay">
+                                <img class="postlist-box-img-cover" src="{% if post.image2 contains "://" %}{{ post.image2 }}{% else %}{{ site.baseurl }}/{{ post.image2 }}{% endif %}" title="{{ post.image2Caption }}">
+                                <div class="imageOverlay">{{ post.image2Caption }}</div>
+                            </div>
+
                             {% endif %}
                         </a>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-12 col-lg-9">
+            <div class="col-12 col-md-12 col-lg-6">
                 <div class="h-100 card-group">
                     <div class="card">
                         <div class="card-body">
                             <h2 class="card-title">
-                                <a class="text-dark" href="{{ site.baseurl }}{{ post.url }}" target="_blank">{{ post.title }}</a>
+                                <a class="text-dark" href="{% if post.story == true %} {{ site.baseurl }}{{ post.url }} {% else %} {{ post.googleReview }} {% endif %}" target="_blank">{{ post.title }}</a>
                                 {% if post.rating %}
                                 <div class="mb-2 mt-2 font-weight-normal">
                                 {% include star_rating_postbox.html %}
@@ -29,7 +38,7 @@
                                 {% endif %}
                             </h2>
 
-                            <h4 class="card-text">{{ post.excerpt | strip_html | truncatewords:40 }}</h4>
+                            <h4 class="card-text">{{post.content}}</h4>
                         </div>
                         <div class="card-footer b-0 bg-white mt-auto">
                             <div class="wrapfooter">
