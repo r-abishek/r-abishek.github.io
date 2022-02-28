@@ -15,7 +15,7 @@ title: Home
 
     {% for post in site.posts %}
 
-        {% if post.featured == true %}
+        {% if post.hidden == false and post.featured == true %}
 
             {% include featuredbox.html %}
 
@@ -58,4 +58,3 @@ title: Home
     {% include pagination.html %}
 </span>
 </div>
-
