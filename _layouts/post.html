@@ -49,17 +49,20 @@ post_class: post-template
             {% endif %}
             <!-- End Adsense -->
 
-            <!-- Post Featured Image -->
-            {% if page.image %}
+            <!-- Post Featured Image1 -->
+            {% if page.image1 %}
 
+            <figure>
             {% if site.lazyimages == "enabled" %}
-            <img class="featured-image img-fluid lazyimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}">
+            <img class="featured-image img-fluid lazyimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="{% if page.image1 contains "://" %}{{ page.image1 }}{% else %}{{ site.baseurl }}/{{ page.image1 }}{% endif %}" alt="{{ page.image1Caption }}">
             {% else %}
-            <img class="featured-image img-fluid" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}">
+            <img class="{% if page.categories[0] == 'Travel' %} featured-image-travel img-fluid {% else %} featured-image img-fluid {% endif %}" src="{% if page.image1 contains "://" %}{{ page.image1 }}{% else %}{{ site.baseurl }}/{{ page.image1 }}{% endif %}" alt="{{ page.image1Caption }}">
             {% endif %}
+            <figcaption>{{ page.image1Caption }}</figcaption>
+            </figure>
 
             {% endif %}
-            <!-- End Featured Image -->
+            <!-- End Post Featured Image1 -->
 
             <!-- Post Content -->
             <div class="article-post">
@@ -77,20 +80,26 @@ post_class: post-template
                 {{content}}
             </div>
 
-            <!-- Post End Image -->
-            {% if page.image_end %}
+            <!-- Post Featured Image2 -->
+            {% if page.image2 %}
 
             <figure>
             {% if site.lazyimages == "enabled" %}
-            <img class="featured-image img-fluid lazyimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="{% if page.image_end contains "://" %}{{ page.image_end }}{% else %}{{ site.baseurl }}/{{ page.image_end }}{% endif %}" alt="{{ page.image_end_alttext }}">
+            <img class="featured-image img-fluid lazyimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="{% if page.image2 contains "://" %}{{ page.image2 }}{% else %}{{ site.baseurl }}/{{ page.image2 }}{% endif %}" alt="{{ page.image2Caption }}">
             {% else %}
-            <img class="featured-image img-fluid" src="{% if page.image_end contains "://" %}{{ page.image_end }}{% else %}{{ site.baseurl }}/{{ page.image_end }}{% endif %}" alt="{{ page.image_end_alttext }}">
+            <img class="{% if page.categories[0] == 'Travel' %} featured-image-travel img-fluid {% else %} featured-image img-fluid {% endif %}" src="{% if page.image2 contains "://" %}{{ page.image2 }}{% else %}{{ site.baseurl }}/{{ page.image2 }}{% endif %}" alt="{{ page.image2Caption }}">
             {% endif %}
-            <figcaption>{{ page.image_end_alttext }}</figcaption>
+            <figcaption>{{ page.image2Caption }}</figcaption>
             </figure>
 
             {% endif %}
-            <!-- Post End Image -->
+            <!-- End Post Featured Image2 -->
+
+            <!-- Post Strava Record -->
+            {% if page.categories[0] == "Travel" and page.stravaRecord != "" %}
+            <p align="center"><iframe height='400' width='600' frameborder='' allowtransparency='true' scrolling='yes' src='{{ page.stravaRecord }}'></iframe></p>
+            {% endif %}
+            <!-- End Post Strava Record -->
 
             <!-- Rating -->
             {% if page.rating %}
@@ -98,6 +107,11 @@ post_class: post-template
                 <strong class="mr-1">Rating:</strong> {% include star_rating.html %}
             </div>
             {% endif %}
+
+            <!-- LikeBtn.com BEGIN -->
+<span class="likebtn-wrapper" data-identifier="item_1" data-site_id="62196a80fa8fdf9359ec8295"></span>
+<script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
+<!-- LikeBtn.com END -->
 
             <!-- Post Date -->
             <p>
