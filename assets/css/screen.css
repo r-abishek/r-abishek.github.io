@@ -4,7 +4,7 @@ Copyright: Sal, WowThemes.net, https://www.wowthemes.net
 License: https://www.wowthemes.net/freebies-license/
 */
 @media screen and (min-width:1500px) {
-    html { font-size:18px; } /* Increase the font size on higher resolutions */
+    html { font-size:16px; } /* Increase the font size on higher resolutions */
     .container {max-width:80%;}
 }
 .mainheading {
@@ -40,8 +40,8 @@ pre {
 
 figcaption {
     text-align: center;
-    font-family: Merriweather;
-    font-size: 1.1rem;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.rem;
     line-height: 1.84;
     color: rgba(0, 0, 0, .8);
 }
@@ -146,7 +146,7 @@ section.recent-posts {
 }
 
 .maxthumb {
-    max-height: 300px;
+    max-height: 500px;
     overflow: hidden;
 }
 
@@ -192,12 +192,20 @@ section.recent-posts {
 }
 
 .postlist-box-img-cover {
+    position: relative;
     object-fit: cover;
+    padding: 8px 8px;
     width: auto;
     height: auto;
     max-height: auto;
     min-width: 25%;
     min-height: 25%;
+}
+
+.postlist-box-img-cover:hover {
+    filter:brightness(1.125) saturate(1.1);
+    transform: scale(1.2);
+    transition: all 0.25s ease;
 }
 
 @media (max-width:991px) {
@@ -407,6 +415,14 @@ blockquote {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+}
+
+.featured-image-travel {
+    display: block;
+    margin-bottom: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
 
 .share {
@@ -958,4 +974,74 @@ iframe {
 .lazyimg[data-srcset] {
     opacity: 0;
     transition: opacity .25s;
+}
+
+.imageCollageRow {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+.imageCollageColumn {
+    flex: 50%;
+    padding: 0 4px;
+}
+.imageCollageColumn img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+.imageCollagePostListRow {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+.imageCollagePostListColumn {
+    flex: 50%;
+    padding: 0 4px;
+}
+.imageCollagePostListColumn img {
+    margin-top: 4px;
+    vertical-align: middle;
+    margin-bottom: 4px;
+}
+
+.imageCollagePostListColumn img:hover{
+    margin-top: 4px;
+    vertical-align: middle;
+    margin-bottom: 4px;
+    filter:brightness(1.125) saturate(1.1);
+    transform: scale(1.2);
+    transition: all 0.25s ease;
+}
+
+.imageContainerWithOverlay {
+    position: relative;
+    overflow: hidden;
+}
+.imageOverlay {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: #f1f1f1;
+    width:70%;
+    background-color:rgba(0, 0, 0, 0.5);
+    vertical-align: middle;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 12px;
+    padding: 6px;
+    text-align: center;
+}
+.imageContainerWithOverlay:hover .imageOverlay {
+    opacity: 1;
+}
+
+.strava-frame {
+    display:block;
+    align-items: center;
+}
+
+html {
+    scroll-behavior: smooth;
 }
