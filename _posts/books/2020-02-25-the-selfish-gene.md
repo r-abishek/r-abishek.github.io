@@ -4,9 +4,10 @@ title: "An eyeopener for non-biologists…"
 author: abishek
 categories: [ Books ]
 tags: [nonfiction, popscience]
-image: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1366758096l/61535.jpg"
+image1: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1366758096l/61535.jpg"
 featured: false
 hidden: false
+story: true
 rating: 5
 ---
 

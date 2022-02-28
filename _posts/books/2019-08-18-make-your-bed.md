@@ -4,9 +4,10 @@ title: "10 life lessons"
 author: abishek
 categories: [ Books ]
 tags: [nonfiction, selfhelp]
-image: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1495769497l/31423133._SX318_.jpg"
+image1: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1495769497l/31423133._SX318_.jpg"
 featured: false
 hidden: false
+story: true
 rating: 4
 ---
 

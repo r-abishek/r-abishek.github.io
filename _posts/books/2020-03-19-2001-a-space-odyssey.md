@@ -4,11 +4,12 @@ title: "The true classic-SciFi"
 author: abishek
 categories: [ Books ]
 tags: [fiction, scifi]
-image: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1432468943l/70535._SY475_.jpg"
-image_end: "assets/images/books/Utah_Desert_Monolith.jpg"
-image_end_alttext: "The famous Utah monolith during the November 2020 timeframe\n(https://en.wikipedia.org/wiki/Utah_monolith)"
+image1: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1432468943l/70535._SY475_.jpg"
+image2: "assets/images/books/Utah_Desert_Monolith.jpg"
+image2Caption: "The famous Utah monolith during the November 2020 timeframe\n(https://en.wikipedia.org/wiki/Utah_monolith)"
 featured: false
 hidden: false
+story: true
 rating: 5
 ---
 
@@ -25,4 +26,3 @@ The book and 1968 movie narratives are also extremely comparable. In fact readin
 Overall, Arthur C. Clarke was quite the titanic visionary in the sci-fi genre and he manages to express his foretelling yet daunting imagination in this book, that’s been quite passionately read in the audio-version to keep the audience engaged. On one hand, reading it in 2020 feels kind-of redundant when weighed up against any of the countless other books/movies/tv shows in this genre between 1968 and 2020 including the Martian, Gravity, Interstellar, Firefly, Star Trek, Battlestar Galactica and Star Wars. But on the other hand, the book is definitely a timeless classic, and a nice add-on to your “finished must-reads” bookshelf!
 
 PS: I was thrilled to see the effect of the 1968 book, even in 2020 pop-culture!! :)
-

@@ -3,7 +3,7 @@ layout: post
 title:  "Accumulated experience of social living"
 author: abishek
 categories: [ Jekyll, tutorial ]
-image: assets/images/15.jpg
+image1: assets/images/15.jpg
 ---
 The die cut has also been employed in the non-juvenile sphere as well, a recent example being Jonathan Safran Foer’s ambitious Tree of Codes.
 

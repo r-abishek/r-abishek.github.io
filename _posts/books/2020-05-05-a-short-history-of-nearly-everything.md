@@ -4,9 +4,10 @@ title: "A fascinating 'fulfill your curiosity' read!"
 author: abishek
 categories: [ Books ]
 tags: [nonfiction, popscience]
-image: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1433086293l/21._SY475_.jpg"
+image1: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1433086293l/21._SY475_.jpg"
 featured: false
 hidden: false
+story: true
 rating: 5
 ---
 
@@ -17,4 +18,3 @@ Bryson talks about the expansion and acceleration of the universe, the billions 
 In subsequent chapters Bryson dives into biology and anthropology. The book talks about the Cambrian explosion, the 5 major extinctions including the Permian and Triassic extinctions, the multiple ice ages and describes the the big-birth, which is the origin and birth of microbes that eventually evolved into more advanced forms of life. Delving into the major areas of work by scientists in the 19th and 20h century gives the reader a brief about the specific evidence supporting the claim/discovery and a general understanding of the process of natural selection, and eventually the biological evolution of humans from bipeds, hominids and Neanderthals.
 
 The book cautions us on how not to endanger our own survival and that of other species and gives countless other discussions on remarkable inventions, interesting stories and examples of successes from the past, that every one of us should have the curiosity to know about. A highly recommended read at any age to expand your knowledge quotient and perspective about our journey to how we got here.
-
