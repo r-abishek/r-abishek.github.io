@@ -1,6 +1,6 @@
 ---
 layout: page
-title: My book reviews
+title: Book reviews
 permalink: /books
 comments: true
 ---
@@ -8,9 +8,9 @@ comments: true
 <div class="row justify-content-between">
 
     <div class="col-md-8 pr-5">
-        <p>This page contains my reviews of the books I found most interesting. I mostly read non-fiction - a mix of memoirs, biographies, popular science, history, politics and self-help.</p>
+        <h4>Favorite Books  |  Memoirs  |  Biographies  |  Popular Science  |  History  |  Self-Help</h4>
         {% for post in site.posts %}
-            {% if post.hidden == false %}
+            {% if post.hidden == false and post.categories[0] == "Books" %}
                 {% include postlistbox.html %}
             {% endif %}
         {% endfor %}
@@ -33,9 +33,9 @@ comments: true
         </style>
         <div id="gr_grid_widget_1634280842">
             <!-- Show static html as a placeholder in case js is not enabled - javascript include will override this if things work -->
-            <h2>
+            <h4>
                 <a style="font-size: 30px; text-decoration: none;" rel="nofollow" href="https://www.goodreads.com/review/list/81725177-abishek?utf8=%E2%9C%93&utf8=%E2%9C%93&ref=nav_mybooks&shelf=read&title=abishek&sort=date_read&order=d" target="_blank">My <img border="0" alt="Abishek's book recommendations, liked quotes, book clubs, book trivia, book lists (read shelf)" src="https://s.gr-assets.com/images/badge/badge1.jpg" width=120px> bookshelf</a>
-            </h2>
+            </h4>
             <div class="gr_grid_container">
                 <div class="gr_grid_book_container"><a title="Bad Blood: Secrets and Lies in a Silicon Valley Startup" rel="nofollow" href="https://www.goodreads.com/book/show/37976541-bad-blood"><img alt="Bad Blood: Secrets and Lies in a Silicon Valley Startup" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1556268702l/37976541._SX98_.jpg" /></a></div>
                 <div class="gr_grid_book_container"><a title="Beginner's Mind" rel="nofollow" href="https://www.goodreads.com/book/show/57680602-beginner-s-mind"><img alt="Beginner's Mind" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1618017664l/57680602._SX98_.jpg" /></a></div>
