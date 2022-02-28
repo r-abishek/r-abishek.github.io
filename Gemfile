@@ -20,3 +20,4 @@ group :jekyll_plugins do
     # gem 'irb', require: false
     gem "webrick", "~> 1.7"
 end
+gem "jekyll", "~> 4.2"
