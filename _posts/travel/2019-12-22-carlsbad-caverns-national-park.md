@@ -5,12 +5,14 @@ hash: "CarlsbadCavernsNationalPark"
 author: abishek
 categories: [ Travel ]
 tags: [ ]
-# image1: "https://lh5.googleusercontent.com/p/AF1QipOvSfaaNyNqnG2bAhvqpeKvoo_H9Js8z4VuhtbO=w600-h420-p-k-no"
 image1: "assets/images/travel/Carlsbad_Caverns_National_Park_1.jpg"
 image1Caption: "Columns and Soda Straws"
-# image2: "https://lh5.googleusercontent.com/p/AF1QipNahu1G0GvmRiMYwjz2K40_xYTzX-mn42MI2OrJ=w600-h420-p-k-no"
 image2: "assets/images/travel/Carlsbad_Caverns_National_Park_2.jpg"
 image2Caption: "Draperies"
+image3: "https://lh5.googleusercontent.com/p/AF1QipP7rGiiA7mkQ2xBHHW_8xSO8pXNoRIReJsqNjpo=w600-h854-p-k-no"
+image3Caption: "Draperies and Flowstones"
+image4: "https://lh5.googleusercontent.com/p/AF1QipOW0U7yBq55rhfmaHznFaLk3a_nAC7co9hih1Yw=w600-h854-p-k-no"
+image4Caption: "Column formation"
 googleReview: "https://goo.gl/maps/nvbt4Vbk7zaCztAh6"
 # stravaRecord: "https://www.strava.com/activities/5187185749/embed/db8d4b4e0201702c724060a83e5c709493a2b881"
 stravaRecord: ""
