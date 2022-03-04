@@ -14,7 +14,20 @@
                                 <img class="postlist-box-img-cover" src="{% if post.image1 contains "://" %}{{ post.image1 }}{% else %}{{ site.baseurl }}/{{ post.image1 }}{% endif %}" title="{{ post.image1Caption }}">
                                 <div class="imageOverlay">{{ post.image1Caption }}</div>
                             </div>
-                            {% include imageCollage/imageCollage_CarlsbadCavernsNationalPark.html %}
+                            <div class="imageCollagePostListRow">
+                                <div class="imageCollagePostListColumn">
+                                    <div class="imageContainerWithOverlay">
+                                        <img src="{{ post.image3 }}" title="{{ post.image3Caption }}">
+                                        <div class="imageOverlay">{{ post.image3Caption }}</div>
+                                    </div>
+                                </div>
+                                <div class="imageCollagePostListColumn">
+                                    <div class="imageContainerWithOverlay">
+                                        <img src="{{ post.image4 }}" title="{{ post.image4Caption }}">
+                                        <div class="imageOverlay">{{ post.image4Caption }}</div>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="imageContainerWithOverlay">
                                 <img class="postlist-box-img-cover" src="{% if post.image2 contains "://" %}{{ post.image2 }}{% else %}{{ site.baseurl }}/{{ post.image2 }}{% endif %}" title="{{ post.image2Caption }}">
                                 <div class="imageOverlay">{{ post.image2Caption }}</div>
