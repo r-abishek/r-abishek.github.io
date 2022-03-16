@@ -51,7 +51,6 @@ post_class: post-template
 
             <!-- Post Featured Image1 -->
             {% if page.image1 %}
-
             <figure>
             {% if site.lazyimages == "enabled" %}
             <img class="featured-image img-fluid lazyimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="{% if page.image1 contains "://" %}{{ page.image1 }}{% else %}{{ site.baseurl }}/{{ page.image1 }}{% endif %}" alt="{{ page.image1Caption }}">
@@ -60,7 +59,6 @@ post_class: post-template
             {% endif %}
             <figcaption>{{ page.image1Caption }}</figcaption>
             </figure>
-
             {% endif %}
             <!-- End Post Featured Image1 -->
 
@@ -79,10 +77,10 @@ post_class: post-template
                 <!-- End Toc -->
                 {{content}}
             </div>
+            <!-- End Post Content -->
 
             <!-- Post Featured Image2 -->
             {% if page.image2 %}
-
             <figure>
             {% if site.lazyimages == "enabled" %}
             <img class="featured-image img-fluid lazyimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="{% if page.image2 contains "://" %}{{ page.image2 }}{% else %}{{ site.baseurl }}/{{ page.image2 }}{% endif %}" alt="{{ page.image2Caption }}">
@@ -91,7 +89,6 @@ post_class: post-template
             {% endif %}
             <figcaption>{{ page.image2Caption }}</figcaption>
             </figure>
-
             {% endif %}
             <!-- End Post Featured Image2 -->
 
@@ -101,27 +98,48 @@ post_class: post-template
             {% endif %}
             <!-- End Post Strava Record -->
 
-            <!-- Rating -->
+            <!-- Post all images -->
+            <div class="imageCollageRow">
+                <div class="imageCollageColumn">
+                    {% if page.image3 %} <div class="imageContainerWithOverlay"><img src="{{ page.image3 }}" title="{{ page.image3Caption }}"><figcaption>{{ page.image3Caption }}</figcaption></div>{% endif %}
+                    {% if page.image5 %} <div class="imageContainerWithOverlay"><img src="{{ page.image5 }}" title="{{ page.image5Caption }}"><figcaption>{{ page.image5Caption }}</figcaption></div>{% endif %}
+                    {% if page.image7 %} <div class="imageContainerWithOverlay"><img src="{{ page.image7 }}" title="{{ page.image7Caption }}"><figcaption>{{ page.image7Caption }}</figcaption></div>{% endif %}
+                    {% if page.image9 %} <div class="imageContainerWithOverlay"><img src="{{ page.image9 }}" title="{{ page.image9Caption }}"><figcaption>{{ page.image9Caption }}</figcaption></div>{% endif %}
+                </div>
+                <div class="imageCollageColumn">
+                    {% if page.image4 %} <div class="imageContainerWithOverlay"><img src="{{ page.image4 }}" title="{{ page.image4Caption }}"><figcaption>{{ page.image4Caption }}</figcaption></div>{% endif %}
+                    {% if page.image6 %} <div class="imageContainerWithOverlay"><img src="{{ page.image6 }}" title="{{ page.image6Caption }}"><figcaption>{{ page.image6Caption }}</figcaption></div>{% endif %}
+                    {% if page.image8 %} <div class="imageContainerWithOverlay"><img src="{{ page.image8 }}" title="{{ page.image8Caption }}"><figcaption>{{ page.image8Caption }}</figcaption></div>{% endif %}
+                    {% if page.image10 %} <div class="imageContainerWithOverlay"><img src="{{ page.image10 }}" title="{{ page.image10Caption }}"><figcaption>{{ page.image10Caption }}</figcaption></div>{% endif %}
+                </div>
+            </div>
+            <!-- End Post all images -->
+
+            <!-- Post Like -->
+            <hr><br><br>
+            <center>
+                <span class="likebtn-wrapper" data-theme="custom" data-btn_size="40" data-f_size="15" data-icon_size="30" data-icon_l="thmb4-u" data-icon_l_c="#00ab6b" data-icon_l_c_v="#000000" data-icon_d_c="#000000" data-icon_d_c_v="#000000" data-label_c="#00ab6b" data-label_c_v="#000000" data-bg_c="#ffffff" data-bg_c_v="#00ab6b" data-brdr_c="#000000" data-f_family="Lucida Grande" data-i18n_like="Nice!    " data-ef_voting="grow" data-white_label="true" data-rich_snippet="true" data-dislike_enabled="false" data-icon_dislike_show="false" data-voting_frequency="2592000" data-counter_frmt="comma" data-popup_style="dark" data-share_size="large" data-addthis_service_codes="facebook,twitter,linkedin,reddit" data-site_id="62294cbcfa8fdf5b2dbac28a"></span>
+                <script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
+            </center>
+            <br><br><hr>
+            <!-- End Post Like -->
+
+            <!-- Post Rating -->
             {% if page.rating %}
             <div class="rating mb-4 d-flex align-items-center">
                 <strong class="mr-1">Rating:</strong> {% include star_rating.html %}
             </div>
             {% endif %}
-
-            <!-- LikeBtn.com BEGIN -->
-<span class="likebtn-wrapper" data-identifier="item_1" data-site_id="62196a80fa8fdf9359ec8295"></span>
-<script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
-<!-- LikeBtn.com END -->
+            <!-- End Post Rating -->
 
             <!-- Post Date -->
-            <p>
-            <small>
+            <p><small>
                 <span class="post-date"><time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time></span>
                 {% if page.last_modified_at %}
                 (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%b %-d, %Y" }}</time>)
                 {% endif %}
-                </small>
-            </p>
+            </small></p>
+            <!-- End Post Date -->
 
             <!-- Post Categories -->
             <div class="after-post-cats">
@@ -134,7 +152,7 @@ post_class: post-template
                     {% endfor %}
                 </ul>
             </div>
-            <!-- End Categories -->
+            <!-- End Post Categories -->
 
             <!-- Post Tags -->
             <div class="after-post-tags">
@@ -147,15 +165,15 @@ post_class: post-template
                     {% endfor %}
                 </ul>
             </div>
-            <!-- End Tags -->
+            <!-- End Post Tags -->
 
             <!-- Prev/Next -->
             <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
             {% if page.previous.url %}
-            <a class="prev d-block col-md-6" href="{{ site.baseurl }}/{{page.previous.url}}"> &laquo; {{page.previous.title}}</a>
+            <a class="prev d-block col-md-6" href="{{ site.baseurl }}{{page.previous.url}}"> &laquo; {{page.previous.title}}</a>
             {% endif %}
             {% if page.next.url %}
-            <a class="next d-block col-md-6 text-lg-right" href="{{ site.baseurl }}/{{page.next.url}}">{{page.next.title}} &raquo; </a>
+            <a class="next d-block col-md-6 text-lg-right" href="{{ site.baseurl }}{{page.next.url}}">{{page.next.title}} &raquo; </a>
             {% endif %}
             <div class="clearfix"></div>
             </div>
