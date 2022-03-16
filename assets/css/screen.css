@@ -422,7 +422,7 @@ blockquote {
     margin-bottom: 1.5rem;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+    width: 80%;
 }
 
 .share {
@@ -986,26 +986,29 @@ iframe {
     padding: 0 4px;
 }
 .imageCollageColumn img {
-    margin-top: 8px;
+    margin-top: 4px;
     vertical-align: middle;
+    margin-bottom: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
 
-.imageCollagePostListRow {
+.imageCollageTravelPageRow {
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px;
 }
-.imageCollagePostListColumn {
+.imageCollageTravelPageColumn {
     flex: 50%;
     padding: 0 4px;
 }
-.imageCollagePostListColumn img {
+.imageCollageTravelPageColumn img {
     margin-top: 4px;
     vertical-align: middle;
     margin-bottom: 4px;
 }
-
-.imageCollagePostListColumn img:hover{
+.imageCollageTravelPageColumn img:hover{
     margin-top: 4px;
     vertical-align: middle;
     margin-bottom: 4px;
@@ -1040,6 +1043,10 @@ iframe {
 .strava-frame {
     display:block;
     align-items: center;
+}
+
+.like-button .likebtn-wrapper {
+    float: center;
 }
 
 html {
