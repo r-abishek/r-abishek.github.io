@@ -5,16 +5,15 @@ hash: "CarlsbadCavernsNationalPark"
 author: abishek
 categories: [ Travel ]
 tags: [ ]
-image1: "assets/images/travel/Carlsbad_Caverns_National_Park_1.jpg"
+image1: "https://user-images.githubusercontent.com/52214183/184519130-3dff88af-c30d-47de-991d-72df286ae0ee.jpg"
 image1Caption: "Columns and Soda Straws"
-image2: "assets/images/travel/Carlsbad_Caverns_National_Park_2.jpg"
+image2: "https://user-images.githubusercontent.com/52214183/184519140-7ed5b40c-8ae2-4783-9b58-2f401a1d706e.jpg"
 image2Caption: "Draperies"
-image3: "https://lh5.googleusercontent.com/p/AF1QipP7rGiiA7mkQ2xBHHW_8xSO8pXNoRIReJsqNjpo=w600-h854-p-k-no"
+image3: "https://user-images.githubusercontent.com/52214183/184519143-b47c329f-9c1b-4011-9a98-224c13074962.jpg"
 image3Caption: "Draperies and Flowstones"
 image4: "https://lh5.googleusercontent.com/p/AF1QipOW0U7yBq55rhfmaHznFaLk3a_nAC7co9hih1Yw=w600-h854-p-k-no"
 image4Caption: "Column formation"
-googleReview: "https://goo.gl/maps/nvbt4Vbk7zaCztAh6"
-# stravaRecord: "https://www.strava.com/activities/5187185749/embed/db8d4b4e0201702c724060a83e5c709493a2b881"
+googleReview: "https://user-images.githubusercontent.com/52214183/184519147-03033b1d-e069-4679-93cc-c9ce2f27a191.jpg"
 stravaRecord: ""
 featured: true
 hidden: false
@@ -24,7 +23,7 @@ rating: 5
 
 Visiting the Carlsbad Caverns National Park was the most scintillatingly unique cave experiences I’ve had. Sitting in a remote northern section amidst a vast 200,000 square miles of the Chihuahuan Desert, the lavish natural formations inside these limestone caverns, is just a wondrously ornamental sight to see!
 
-The bizarre, yet somehow divinely spectacular array of speleothems, formed just by the action of sulfuric acid on limestone over millions of years was indeed a captivating and an educative experience. We got to see and learn about stalagmites rising from the floor, stalactites extending down from 250 feet tall ceilings, columns where the stalagmites and stalactites meet, other speleothems like:
+The bizarre, yet somehow divinely spectacular array of speleothems, formed just by the action of **sulfuric acid on limestone** over millions of years was indeed a captivating and an educative experience. We got to see and learn about stalagmites rising from the floor, stalactites extending down from 250 feet tall ceilings, columns where the stalagmites and stalactites meet, other speleothems like:
 - Curtains
 - Flow-stones
 - Cave pearls
@@ -34,4 +33,4 @@ The bizarre, yet somehow divinely spectacular array of speleothems, formed just 
 
 I haven’t seen this kind of variety either in Crystal Cave, CA or in Luray Caverns, VA. Experiencing this hidden world by walking down the natural entrance to the “Big Room” and doing the “King’s Palace Guided Tour” is highly recommended, and were the highlights of our visit.
 
-The Carlsbad cavern is supposedly only 1 of around 300 caverns found in this area! Another significantly beautiful cave in the area being the Lechuguilla cave, which is about 150 miles in length - one of the longest in the world, and still being explored. I do hope that at some point in time, a section of Lechuguilla opens up for the public to get a glimpse of the rare speleothems that it has in store.
+The Carlsbad cavern is supposedly **only 1 of around 300 caverns** found in this area! Another significantly beautiful cave in the area being the Lechuguilla cave, which is about 150 miles in length - one of the longest in the world, and still being explored. I do hope that at some point in time, a section of Lechuguilla opens up for the public to get a glimpse of the rare speleothems that it has in store.
