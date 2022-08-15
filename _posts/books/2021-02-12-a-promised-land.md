@@ -4,9 +4,10 @@ title: "700+ pages / 30 hours of a soothing mellifluous voice!"
 author: abishek
 categories: [ Books ]
 tags: [nonfiction, memoir, politics, history]
-image: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1600357110l/55361205._SY475_.jpg"
+image1: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1600357110l/55361205._SY475_.jpg"
 featured: true
 hidden: false
+story: true
 rating: 5
 ---
 
@@ -23,4 +24,3 @@ Among his various state visits, Obama elaborates on his visit to India in 2010. 
 The meticulously recounted details of geo-political events and issues during his presidency - like specific encounters with G20 leaders, BRICS leaders, working on global issues like climate change, nuclear non-proliferation, anti-terrorism, <span class="spoiler">dealing with the collapse of the Greek economy or an environmental disaster like the gulf of Mexico oil spill, working on closing the infamous Guantanamo Bay prison, the pivotal role of the US in the “Arab Spring” democratic uprisings against autocratic governments in Egypt and Libya,</span> and other recollections of trips to various countries around the world provide the reader with a true insider view into the life of a US president and were most captivating for me - more than the descriptions of local US politics.
 
 Finally, Obama also talks about two of his most treasured and crowning achievements as president - the successful passing of the **Affordable Care Act** after an epic battle and constant efforts to muster up the necessary votes and secondly, the relentless efforts of the CIA since 9/11 that culminated in the **capture and killing Bin Laden**. On the whole, although “A Promised Land” is extremely verbose, providing readers with more detail than most would want, it is indeed most insightful, informative and inspiring to readers - as expected.
-

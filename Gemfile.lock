@@ -76,6 +76,7 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
+  jekyll (~> 4.2)
   jekyll-archives
   jekyll-feed
   jekyll-paginate

@@ -4,9 +4,10 @@ title: "One truly useful ideology. Countless examples."
 author: abishek
 categories: [ Books ]
 tags: [nonfiction, business, selfhelp]
-image: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1545854312l/12609433._SY475_.jpg"
+image1: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1545854312l/12609433._SY475_.jpg"
 featured: true
 hidden: false
+story: true
 rating: 5
 ---
 

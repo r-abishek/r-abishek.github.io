@@ -4,9 +4,10 @@ title: "Bezos, his brainchild, the tenets, the conquests.."
 author: abishek
 categories: [ Books ]
 tags: [nonfiction, biography, business]
-image: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1631792766l/17660462._SX318_.jpg"
+image1: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1631792766l/17660462._SX318_.jpg"
 featured: false
 hidden: false
+story: true
 rating: 5
 ---
 

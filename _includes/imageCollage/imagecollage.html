@@ -1,0 +1,29 @@
+<!-- begin post -->
+{% assign author = site.authors[post.author] %}
+<div class="imageCollageTravelPageRow">
+    <div class="imageCollageTravelPageColumn">
+        {% for post in site.posts %}
+            {% if post.hidden == false and post.categories[0] == "Travel" %}
+                <a href="#{{ post.hash }}"><img src="{{ post.image1 }}" title="{{ post.image1Caption }}"></a>
+            {% endif %}
+        {% endfor %}
+        {% for post in site.posts %}
+            {% if post.hidden == false and post.categories[0] == "Travel" %}
+                <a href="#{{ post.hash }}"><img src="{{ post.image3 }}" title="{{ post.image3Caption }}"></a>
+            {% endif %}
+        {% endfor %}
+    </div>
+    <div class="imageCollageTravelPageColumn">
+        {% for post in site.posts reversed %}
+            {% if post.hidden == false and post.categories[0] == "Travel" %}
+                <a href="#{{ post.hash }}"><img src="{{ post.image2 }}" title="{{ post.image2Caption }}"></a>
+            {% endif %}
+        {% endfor %}
+        {% for post in site.posts reversed %}
+            {% if post.hidden == false and post.categories[0] == "Travel" %}
+                <a href="#{{ post.hash }}"><img src="{{ post.image4 }}" title="{{ post.image4Caption }}"></a>
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>
+<!-- end post -->
