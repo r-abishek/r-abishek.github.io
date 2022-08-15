@@ -5,7 +5,7 @@ author: abishek
 categories: [ Books ]
 tags: [fiction, scifi]
 image1: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1432468943l/70535._SY475_.jpg"
-image2: "assets/images/books/Utah_Desert_Monolith.jpg"
+image2: "https://user-images.githubusercontent.com/52214183/184560105-da066c21-4aef-4d32-b415-4d8d4260f6df.jpg"
 image2Caption: "The famous Utah monolith during the November 2020 timeframe\n(https://en.wikipedia.org/wiki/Utah_monolith)"
 featured: false
 hidden: false
