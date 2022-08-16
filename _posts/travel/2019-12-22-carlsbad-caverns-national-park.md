@@ -6,12 +6,16 @@ author: abishek
 categories: [ Travel ]
 tags: [ ]
 image1: "https://user-images.githubusercontent.com/52214183/184519130-3dff88af-c30d-47de-991d-72df286ae0ee.jpg"
+image1Thumbnail: "https://user-images.githubusercontent.com/52214183/184953448-578d2554-8d13-41d1-a3b5-d65fde227111.jpg"
 image1Caption: "Columns and Soda Straws"
 image2: "https://user-images.githubusercontent.com/52214183/184519140-7ed5b40c-8ae2-4783-9b58-2f401a1d706e.jpg"
+image2Thumbnail: "https://user-images.githubusercontent.com/52214183/184953452-8cb31441-71cb-4539-8dbb-c16a0848f182.jpg"
 image2Caption: "Draperies"
 image3: "https://user-images.githubusercontent.com/52214183/184519143-b47c329f-9c1b-4011-9a98-224c13074962.jpg"
+image3Thumbnail: "https://user-images.githubusercontent.com/52214183/184953456-a697d928-2680-47d6-a48a-3407b38b9b81.jpg"
 image3Caption: "Draperies and Flowstones"
 image4: "https://lh5.googleusercontent.com/p/AF1QipOW0U7yBq55rhfmaHznFaLk3a_nAC7co9hih1Yw=w600-h854-p-k-no"
+image4Thumbnail: "https://user-images.githubusercontent.com/52214183/184953457-763e45ee-b633-4900-ba7f-be6023a33764.jpg"
 image4Caption: "Column formation"
 googleReview: "https://user-images.githubusercontent.com/52214183/184519147-03033b1d-e069-4679-93cc-c9ce2f27a191.jpg"
 stravaRecord: ""

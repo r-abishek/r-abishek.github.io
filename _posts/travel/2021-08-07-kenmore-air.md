@@ -6,12 +6,16 @@ author: abishek
 categories: [ Travel ]
 tags: [ ]
 image1: "https://user-images.githubusercontent.com/52214183/184255798-db0d7d8f-d985-43b6-ac5a-8d9729348439.jpg"
+image1Thumbnail: "https://user-images.githubusercontent.com/52214183/184952905-ffc8be7e-51e3-4cdc-bd84-38ef6a10c84f.jpg"
 image1Caption: "A first seaplane 'co-piloting' experience"
 image2: "https://user-images.githubusercontent.com/52214183/184255811-2fb89685-394b-4bb1-b6c2-ec4ab63de909.jpg"
+image2Thumbnail: "https://user-images.githubusercontent.com/52214183/184952906-909ef5f5-d29d-4c31-bc62-5c4f9444b73d.jpg"
 image2Caption: "The San Juan Islands"
 image3: "https://user-images.githubusercontent.com/52214183/184255819-61a11e1d-33e0-4cfc-8b6f-990c6fc9e287.jpg"
+image3Thumbnail: "https://user-images.githubusercontent.com/52214183/184952908-2838662f-31c0-4714-9101-f7c448102e2b.jpg"
 image3Caption: "de Havilland DHC-3 Otter - the King Beaver"
 image4: "https://user-images.githubusercontent.com/52214183/184255825-89ba7b06-a2e4-417e-91b1-24b4435b1e1c.jpg"
+image4Thumbnail: "https://user-images.githubusercontent.com/52214183/184952909-84e14f9d-5274-46c2-8048-e7c2ec610f1e.jpg"
 image4Caption: "State of the art 1950s cockpit"
 googleReview: "https://goo.gl/maps/tnjhdy3bQukH8xux6"
 stravaRecord: ""

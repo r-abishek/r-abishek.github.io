@@ -6,8 +6,10 @@ author: abishek
 categories: [ Travel ]
 tags: [ ]
 image1: "https://user-images.githubusercontent.com/52214183/184524746-e5bfd22c-64a6-4ece-8edb-3107d4445954.jpg"
+image1Thumbnail: "https://user-images.githubusercontent.com/52214183/184953347-a6d8469e-135e-475b-8d73-6602761e0699.jpg"
 image1Caption: "Phantom Ranch Main Canteen"
 image2: "https://user-images.githubusercontent.com/52214183/184524748-666a0644-2884-4c02-8970-16262ca27f87.jpg"
+image2Thumbnail: "https://user-images.githubusercontent.com/52214183/184953348-862be94e-a405-493e-bff7-bb1e393b5fea.jpg"
 image2Caption: "Phantom Ranch Dorms"
 googleReview: "https://goo.gl/maps/WxFQuMiYCwDeeRKTA"
 stravaRecord: ""

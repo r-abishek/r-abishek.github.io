@@ -6,12 +6,16 @@ author: abishek
 categories: [ Travel ]
 tags: [ ]
 image1: "https://user-images.githubusercontent.com/52214183/184271029-be44c0cc-1fd0-4b80-a3e7-556d58537ab2.jpg"
+image1Thumbnail: "https://user-images.githubusercontent.com/52214183/184952844-98c55551-fefb-4632-a2b9-d94b98ae5b4c.jpg"
 image1Caption: "Alkali flat trail"
 image2: "https://user-images.githubusercontent.com/52214183/184271038-b7acd0d4-d875-437b-ab0e-719f83e50eac.jpg"
+image2Thumbnail: "https://user-images.githubusercontent.com/52214183/184952846-82b45315-45fc-48fc-ba18-6518423ca364.jpg"
 image2Caption: "White gypsum sand"
 image3: "https://user-images.githubusercontent.com/52214183/184271047-f86fb89d-e57a-42dd-87d5-fd68c798b42a.jpg"
+image3Thumbnail: "https://user-images.githubusercontent.com/52214183/184952850-6a378dc0-f843-45ec-90e8-a8c7ebac1065.jpg"
 image3Caption: "40-60 feet high dunes"
 image4: "https://user-images.githubusercontent.com/52214183/184271052-337cc08e-8096-4959-a4bc-d83b81dfed87.jpg"
+image4Thumbnail: "https://user-images.githubusercontent.com/52214183/184952856-172588ce-2d35-495a-9898-725dca02ce91.jpg"
 image4Caption: "Gypsum sand drawings"
 googleReview: "https://goo.gl/maps/iVDreKtPiTZ4kLfK9"
 stravaRecord: ""

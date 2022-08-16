@@ -3,25 +3,45 @@
 <div class="imageCollageTravelPageRow">
     <div class="imageCollageTravelPageColumn">
         {% for post in site.posts %}
-            {% if post.hidden == false and post.categories[0] == "Travel" %}
-                <a href="#{{ post.hash }}"><img src="{{ post.image1 }}" title="{{ post.image1Caption }}"></a>
+            {% if post.hidden == false and post.categories[0] == "Travel" and post.image1 %}
+                <a href="#{{ post.hash }}"><img src="{{ post.image1Thumbnail }}" title="{{ post.image1Caption }}"></a>
             {% endif %}
         {% endfor %}
         {% for post in site.posts %}
-            {% if post.hidden == false and post.categories[0] == "Travel" %}
-                <a href="#{{ post.hash }}"><img src="{{ post.image3 }}" title="{{ post.image3Caption }}"></a>
+            {% if post.hidden == false and post.categories[0] == "Travel" and post.image3 %}
+                <a href="#{{ post.hash }}"><img src="{{ post.image3Thumbnail }}" title="{{ post.image3Caption }}"></a>
+            {% endif %}
+        {% endfor %}
+        {% for post in site.posts %}
+            {% if post.hidden == false and post.categories[0] == "Travel" and post.image5 %}
+                <a href="#{{ post.hash }}"><img src="{{ post.image5Thumbnail }}" title="{{ post.image5Caption }}"></a>
+            {% endif %}
+        {% endfor %}
+        {% for post in site.posts %}
+            {% if post.hidden == false and post.categories[0] == "Travel" and post.image7 %}
+                <a href="#{{ post.hash }}"><img src="{{ post.image7Thumbnail }}" title="{{ post.image7Caption }}"></a>
             {% endif %}
         {% endfor %}
     </div>
     <div class="imageCollageTravelPageColumn">
         {% for post in site.posts reversed %}
-            {% if post.hidden == false and post.categories[0] == "Travel" %}
-                <a href="#{{ post.hash }}"><img src="{{ post.image2 }}" title="{{ post.image2Caption }}"></a>
+            {% if post.hidden == false and post.categories[0] == "Travel" and post.image2 %}
+                <a href="#{{ post.hash }}"><img src="{{ post.image2Thumbnail }}" title="{{ post.image2Caption }}"></a>
             {% endif %}
         {% endfor %}
         {% for post in site.posts reversed %}
-            {% if post.hidden == false and post.categories[0] == "Travel" %}
-                <a href="#{{ post.hash }}"><img src="{{ post.image4 }}" title="{{ post.image4Caption }}"></a>
+            {% if post.hidden == false and post.categories[0] == "Travel" and post.image4 %}
+                <a href="#{{ post.hash }}"><img src="{{ post.image4Thumbnail }}" title="{{ post.image4Caption }}"></a>
+            {% endif %}
+        {% endfor %}
+        {% for post in site.posts %}
+            {% if post.hidden == false and post.categories[0] == "Travel" and post.image6 %}
+                <a href="#{{ post.hash }}"><img src="{{ post.image6Thumbnail }}" title="{{ post.image6Caption }}"></a>
+            {% endif %}
+        {% endfor %}
+        {% for post in site.posts %}
+            {% if post.hidden == false and post.categories[0] == "Travel" and post.image8 %}
+                <a href="#{{ post.hash }}"><img src="{{ post.image8Thumbnail }}" title="{{ post.image8Caption }}"></a>
             {% endif %}
         {% endfor %}
     </div>

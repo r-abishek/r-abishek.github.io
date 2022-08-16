@@ -6,12 +6,16 @@ author: abishek
 categories: [ Travel ]
 tags: [ ]
 image1: "https://user-images.githubusercontent.com/52214183/184524727-187bde2c-b73a-46b6-bbc2-f335ffb44b4a.jpg"
+image1Thumbnail: "https://user-images.githubusercontent.com/52214183/184953350-3dfc39b4-f37d-4ad2-adfb-87faed7666c6.jpg"
 image1Caption: "A vast alkali crust of hexagonal tessellations"
 image2: "https://user-images.githubusercontent.com/52214183/184524730-510ca383-f765-48dc-bd35-49a789b111a0.jpg"
+image2Thumbnail: "https://user-images.githubusercontent.com/52214183/184953352-688971a0-5c59-4352-9676-355be2bdd6da.jpg"
 image2Caption: "Spiky salt formations"
 image3: "https://user-images.githubusercontent.com/52214183/184524736-63d87719-d0e3-4089-b459-8eb344e80f71.jpg"
+image3Thumbnail: "https://user-images.githubusercontent.com/52214183/184953354-c16539a4-8700-47c8-a366-cfa555d4385a.jpg"
 image3Caption: "Salt water spring"
 image4: "https://user-images.githubusercontent.com/52214183/184524737-c0a8c2ad-c1ea-4025-8d55-b1e9f620f6f9.jpg"
+image4Thumbnail: "https://user-images.githubusercontent.com/52214183/184953355-0233a0eb-2fb7-463d-8a7f-f9a779761f6c.jpg"
 image4Caption: "Desert dry at 282ft below sea level"
 googleReview: "https://goo.gl/maps/DpU6i55JeKVBkMxJ8"
 stravaRecord: ""

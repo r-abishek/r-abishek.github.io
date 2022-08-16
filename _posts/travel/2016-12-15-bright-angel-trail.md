@@ -6,21 +6,26 @@ author: abishek
 categories: [ Travel ]
 tags: [ ]
 image1: "https://user-images.githubusercontent.com/52214183/184524802-3d917844-e803-4636-90c0-f30a3e832a01.jpg"
+image1Thumbnail: "https://user-images.githubusercontent.com/52214183/184953316-a549727a-4b93-44f8-b146-acf7fec7fc0f.jpg"
 image1Caption: "The Bright Angel Canyon"
 image2: "https://user-images.githubusercontent.com/52214183/184524804-3706d195-da5d-476a-aaf9-873261c01bde.jpg"
+image2Thumbnail: "https://user-images.githubusercontent.com/52214183/184953329-48312f19-db79-43d9-8a20-30010374c030.jpg"
 image2Caption: "Grand Canyon Paleozoic Stratigraphy"
 image3: "https://user-images.githubusercontent.com/52214183/184524808-0974ed08-a181-4427-8869-93d08ce08a34.jpg"
+image3Thumbnail: "https://user-images.githubusercontent.com/52214183/184953334-cd8ecc28-f1d9-4172-bd2d-bb6c35596682.jpg"
 image3Caption: "Artistic sunrise"
 image4: "https://user-images.githubusercontent.com/52214183/184524809-2ef1d27c-d7cb-490e-a909-343838da85c9.jpg"
+image4Thumbnail: "https://user-images.githubusercontent.com/52214183/184953335-625a184f-286b-426b-a730-0e91ea384306.jpg"
 image4Caption: "Mule rides"
-
 image5: "https://user-images.githubusercontent.com/52214183/184524814-6f937608-6fba-4851-b99a-738057c38d7b.jpg"
+image5Thumbnail: "https://user-images.githubusercontent.com/52214183/184953338-2abc3166-accf-45e7-815a-0931556fb4a4.jpg"
 image5Caption: "Tapeats sandstone layers"
 image6: "https://user-images.githubusercontent.com/52214183/184524816-539cd435-c280-4104-9189-837b58822ac1.jpg"
+image6Thumbnail: "https://user-images.githubusercontent.com/52214183/184953340-761ad121-9a49-4e8e-a2f1-89c2a3fa11ac.jpg"
 image6Caption: "Colorado river footbridge"
 image7: "https://user-images.githubusercontent.com/52214183/184524819-280324d7-d95f-4b1d-acd5-838df24453ca.jpg"
+image7Thumbnail: "https://user-images.githubusercontent.com/52214183/184953344-014a8a9d-6b5d-4745-893a-e00f57d3fe7a.jpg"
 image7Caption: "Canyon sunset"
-
 googleReview: "https://goo.gl/maps/9FnyyCW3W6Bc9BZA8"
 stravaRecord: ""
 featured: true
