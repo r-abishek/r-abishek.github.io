@@ -8,7 +8,7 @@ image1: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodr
 featured: true
 hidden: false
 story: true
-rating: 5
+rating: 4
 ---
 
 Michio Kaku's "Quantum Supremacy" is a fascinating journey into the cutting-edge world of quantum computing and its potential to revolutionize our understanding of the universe. The book masterfully bridges the gap between complex quantum mechanics and practical applications that could transform medicine, climate science, and artificial intelligence.

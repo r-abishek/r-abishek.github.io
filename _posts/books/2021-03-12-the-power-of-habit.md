@@ -8,7 +8,7 @@ image1: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1
 featured: true
 hidden: false
 story: true
-rating: 5
+rating: 4.5
 ---
 
 The power of habit is quite a must read for all who want to get from “wannabe” to “achiever” - in terms of **developing a new habit or getting rid of one.** It’s not too long a read, and I can say that I factually learned quite a lot from this book, but it could have probably been shorter considering that it offers only one major idea thats presented in the first section of the book.
