@@ -21,6 +21,6 @@ comments: true
         <h4>
             Travel Collage
         </h4>
-        {% include imageCollage/imageCollage.html %}
+        {% include imagesCollage/imagesCollage.html %}
     </div>
 </div>
