@@ -104,32 +104,4 @@ comments: false
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 <!-- Custom CSS for social buttons -->
-<style>
-    .social-buttons .btn {
-        width: 100%;
-        text-align: left;
-        padding: 8px 15px;
-        margin-bottom: 8px;
-        border-radius: 4px;
-        transition: all 0.3s ease;
-    }
-    .social-buttons .btn:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    }
-    .social-buttons .btn i {
-        margin-right: 10px;
-        width: 20px;
-        text-align: center;
-    }
-    .strava-feed, .twitter-feed {
-        background: #f8f9fa;
-        padding: 15px;
-        border-radius: 8px;
-        margin-bottom: 20px;
-    }
-    .strava-feed h6, .twitter-feed h6 {
-        margin-bottom: 15px;
-        color: #333;
-    }
-</style>
+<!-- Removed inline CSS as it is now in screen.css -->

@@ -1114,3 +1114,32 @@ html {
 .lunrsearchresult a { display: block; color: #777; }
 .lunrsearchresult a:hover, .lunrsearchresult a:focus { text-decoration: none; }
 .lunrsearchresult a:hover .title { text-decoration: underline; }
+
+/* Consolidated inline CSS from _pages/about.md */
+.social-buttons .btn {
+    width: 100%;
+    text-align: left;
+    padding: 8px 15px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+.social-buttons .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.social-buttons .btn i {
+    margin-right: 10px;
+    width: 20px;
+    text-align: center;
+}
+.strava-feed, .twitter-feed {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.strava-feed h6, .twitter-feed h6 {
+    margin-bottom: 15px;
+    color: #333;
+}
