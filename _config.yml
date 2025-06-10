@@ -1,7 +1,7 @@
 # Site
 name: "Abishek Ramasubramanian"
 title: "Abishek Ramasubramanian"
-description: "Software Development Engineer in Computer Vision, Student Pilot, AI Enthusiast"
+description: "Solutions Architect in Computer Vision, Student Pilot, AI Enthusiast"
 logo: 'assets/images/dpedit04.png'
 favicon: 'assets/images/dpedit04.png'
 baseurl: /r-abishek
@@ -20,7 +20,7 @@ authors:
         email: abishekr92@gmail.com
         web: https:/r-abishek.github.io
         twitter: https://twitter.com/abishekr92
-        description: "Software Development Engineer in Computer Vision, Student Pilot, AI Enthusiast"
+        description: "Solutions Architect in Computer Vision, Student Pilot, AI Enthusiast"
 
 # Plugins
 plugins:
