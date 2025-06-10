@@ -365,7 +365,11 @@ span.post-read-more a:hover {
 }
 
 .mainheading h1.sitetitle {
-    font-family: Righteous;
+    font-family: 'Playfair Display', Righteous, serif;
+    font-size: 2.8rem;
+    letter-spacing: 0.04em;
+    color: #222;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.04);
     margin-top: 1rem;
 }
 
