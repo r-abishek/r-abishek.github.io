@@ -1107,3 +1107,10 @@ html {
     flex-direction: column;
     justify-content: center;
 }
+
+/* Consolidated inline CSS from _includes/search-lunr.html */
+.lunrsearchresult .title { color: #d9230f; }
+.lunrsearchresult .url { color: silver; }
+.lunrsearchresult a { display: block; color: #777; }
+.lunrsearchresult a:hover, .lunrsearchresult a:focus { text-decoration: none; }
+.lunrsearchresult a:hover .title { text-decoration: underline; }
