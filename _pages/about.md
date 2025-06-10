@@ -29,16 +29,16 @@ comments: false
             
             <!-- Social Media Buttons -->
             <div class="social-buttons mb-4">
-                <a href="https://www.linkedin.com/in/abishekr1" class="btn btn-primary mb-2" target="_blank">
-                    <i class="fab fa-linkedin"></i> LinkedIn
+                <a href="https://www.linkedin.com/in/abishekr1" class="btn mb-2" target="_blank" style="background:#0077b5; color:#fff; border:1px solid #0077b5;">
+                    <i class="fab fa-linkedin-in"></i> LinkedIn
                 </a>
-                <a href="https://twitter.com/abishekr92" class="btn btn-info mb-2" target="_blank">
-                    <i class="fab fa-twitter"></i> X (Twitter)
+                <a href="https://twitter.com/abishekr92" class="btn mb-2" target="_blank" style="background:#000; color:#fff; border:1px solid #000;">
+                    <i class="fa-brands fa-x-twitter"></i> X
                 </a>
-                <a href="https://github.com/r-abishek" class="btn btn-dark mb-2" target="_blank">
+                <a href="https://github.com/r-abishek" class="btn mb-2" target="_blank" style="background:#181717; color:#fff; border:1px solid #181717;">
                     <i class="fab fa-github"></i> GitHub
                 </a>
-                <a href="https://www.strava.com/athletes/abishekr92" class="btn btn-danger mb-2" target="_blank">
+                <a href="https://www.strava.com/athletes/abishekr92" class="btn mb-2" target="_blank" style="background:#fc4c02; color:#fff; border:1px solid #fc4c02;">
                     <i class="fab fa-strava"></i> Strava
                 </a>
             </div>
