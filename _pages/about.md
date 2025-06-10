@@ -22,30 +22,30 @@ comments: false
         <p>When I'm not reading or writing, you can find me exploring the great outdoors, tracking hikes and adventures on Strava, or sharing posts on technology and science on X(Twitter).</p>
 
         <p>I believe in the power of continuous learning and the importance of understanding our world better!</p>
+
+        <!-- Connect with me section moved here -->
+        <div class="connect-block text-center my-4">
+            <h5>Connect</h5>
+            <div class="social-buttons mb-4 d-flex flex-wrap justify-content-center" style="gap: 12px;">
+                <a href="https://www.linkedin.com/in/abishekr1" class="btn social-btn mb-2" target="_blank" style="background:#0077b5; color:#fff; border:1px solid #0077b5; min-width: 120px; display: flex; align-items: center; justify-content: center;">
+                    <span style="display: flex; align-items: center; justify-content: center; width: 100%;"><i class="fab fa-linkedin-in" style="margin-right:8px;"></i>LinkedIn</span>
+                </a>
+                <a href="https://twitter.com/abishekr92" class="btn social-btn mb-2" target="_blank" style="background:#000; color:#fff; border:1px solid #000; min-width: 100px; display: flex; align-items: center; justify-content: center;">
+                    <span style="display: flex; align-items: center; justify-content: center; width: 100%;"><i class="fa-brands fa-x-twitter" style="margin-right:8px;"></i>X</span>
+                </a>
+                <a href="https://github.com/r-abishek" class="btn social-btn mb-2" target="_blank" style="background:#181717; color:#fff; border:1px solid #181717; min-width: 110px; display: flex; align-items: center; justify-content: center;">
+                    <span style="display: flex; align-items: center; justify-content: center; width: 100%;"><i class="fab fa-github" style="margin-right:8px;"></i>GitHub</span>
+                </a>
+                <a href="https://www.strava.com/athletes/abishekr92" class="btn social-btn mb-2" target="_blank" style="background:#fc4c02; color:#fff; border:1px solid #fc4c02; min-width: 110px; display: flex; align-items: center; justify-content: center;">
+                    <span style="display: flex; align-items: center; justify-content: center; width: 100%;"><i class="fab fa-strava" style="margin-right:8px;"></i>Strava</span>
+                </a>
+            </div>
+        </div>
     </div>
     <div class="col-md-4 pr-3">
         <div class="sticky-top sticky-top-80">
-            <h5>Connect with me</h5>
-            
-            <!-- Social Media Buttons -->
-            <div class="social-buttons mb-4">
-                <a href="https://www.linkedin.com/in/abishekr1" class="btn mb-2" target="_blank" style="background:#0077b5; color:#fff; border:1px solid #0077b5;">
-                    <i class="fab fa-linkedin-in"></i> LinkedIn
-                </a>
-                <a href="https://twitter.com/abishekr92" class="btn mb-2" target="_blank" style="background:#000; color:#fff; border:1px solid #000;">
-                    <i class="fa-brands fa-x-twitter"></i> X
-                </a>
-                <a href="https://github.com/r-abishek" class="btn mb-2" target="_blank" style="background:#181717; color:#fff; border:1px solid #181717;">
-                    <i class="fab fa-github"></i> GitHub
-                </a>
-                <a href="https://www.strava.com/athletes/abishekr92" class="btn mb-2" target="_blank" style="background:#fc4c02; color:#fff; border:1px solid #fc4c02;">
-                    <i class="fab fa-strava"></i> Strava
-                </a>
-            </div>
-
             <!-- Recent Activity Feeds -->
             <h5>Recent Activity</h5>
-            
             <!-- Strava Feed -->
             <div class="strava-feed mb-4">
                 <h6><i class="fab fa-strava"></i> Recent Strava Activity</h6>
@@ -86,21 +86,12 @@ comments: false
                 </div>
                 <script src="https://strava-embeds.com/embed.js"></script>
             </div>
-
             <!-- X (Twitter) Feed -->
             <div class="twitter-feed">
-                <h6><i class="fab fa-twitter"></i> Recent Tweets</h6>
-                <!-- <a class="twitter-timeline" 
-                   data-height="400"
-                   data-theme="light"
-                   data-chrome="nofooter noborders"
-                   data-tweet-limit="3"
-                   href="https://twitter.com/abishekr92">
-                </a> -->
-
+                <h6><i class="fa-brands fa-x-twitter"></i> Recent Posts on X</h6>
                 <div align="center">
                     <a class="twitter-timeline" data-theme="dark" href="https://twitter.com/abishekr92?ref_src=twsrc%5Etfw">
-                        Tweets by abishekr92
+                        Posts by abishekr92
                     </a>
                 </div>
                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
