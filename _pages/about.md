@@ -7,19 +7,19 @@ comments: false
 
 <div class="row justify-content-between">
     <div class="col-md-8 pr-5">
-        <p>Welcome to my corner of the internet! I'm Abishek, a technology enthusiast with a deep passion for understanding how things work - anything from human stories behind scientific discoveries, the semiconductor and chip revolution, to aviation, physics and quantum mechanics that shapes our universe.</p>
+        <p>Welcome to my corner of the internet! I'm Abishek, a technology enthusiast with varied interests in anything from semiconductors, GPUs and accelerators for high performance compute, the chip revolution, the ai evolution, to aviation, physics, stories behind scientific discoveries, and quantum tech.</p>
 
-        <p>This space is where I share thoughts on books that have shaped my understanding of the world. You'll find reviews of works that explore the intersection of science, technology, human achievement, and self development.</p>
+        <p>This space is where I share some travel destinations and books that have shaped my understanding of the world. Some of the book-notes / summaries here explore the intersection of science, technology, human achievement, and self development that I've found quite useful.</p>
 
         <p>My reading journey often takes me through:</p>
         <ul>
-            <li>**Scientific Discoveries**: The stories behind breakthroughs that changed our understanding of the universe so far</li>
-            <li>**Technological Innovation**: How new technologies are reshaping our world and what's in store for the foreseeable future</li>
-            <li>**Human Achievement**: The remarkable stories of people who pushed the boundaries of what's possible</li>
-            <li>**Personal Development**: Books that help us understand ourselves and our place in the world</li>
+            <li> Scientific Discoveries : The stories behind breakthroughs that changed our understanding of the universe so far.</li>
+            <li>Technological Innovation : How new technologies are reshaping our world and what's in store for the foreseeable future.</li>
+            <li>Human Achievement : The remarkable stories of people who pushed the boundaries of what's possible.</li>
+            <li>Personal Development : Books that help us understand ourselves and our place in the world.</li>
         </ul>
 
-        <p>When I'm not reading or writing, you can find me exploring the great outdoors, tracking hikes and adventures on Strava, or sharing posts on technology and science on X(Twitter).</p>
+        <p>Exploring the great outdoors, sharing best travel experiences, tracking hikes and adventures on Strava, or sharing good reads on technology and science on X(Twitter) are of interest to me.</p>
 
         <p>I believe in the power of continuous learning and the importance of understanding our world better!</p>
 
