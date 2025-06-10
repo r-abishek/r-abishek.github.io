@@ -3,14 +3,28 @@ Template Name: Mediumish
 Copyright: Sal, WowThemes.net, https://www.wowthemes.net
 License: https://www.wowthemes.net/freebies-license/
 */
+
+/*
+ * Responsive font size for higher resolutions
+ * Increases base font size and container width for large screens
+ */
 @media screen and (min-width:1500px) {
-    html { font-size:16px; } /* Increase the font size on higher resolutions */
+    html { font-size:16px; }
     .container {max-width:80%;}
 }
+
+/*
+ * Main heading wrapper for page/post titles and author box
+ * Used in post.html and other layouts
+ */
 .mainheading {
     padding: 1rem 0rem;
 }
 
+/*
+ * Global link styles for all anchor tags
+ * Brand color and hover effect
+ */
 a {
     color: #00ab6b;
     transition: all 0.2s;
@@ -21,6 +35,10 @@ a:hover {
     text-decoration: none;
 }
 
+/*
+ * Pre-formatted text (code blocks, etc.)
+ * Ensures code is readable and styled consistently
+ */
 pre {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -38,6 +56,10 @@ pre {
     margin-bottom: -rem;
 }
 
+/*
+ * Figure captions for images in posts
+ * Used with <figcaption> under images
+ */
 figcaption {
     text-align: center;
     font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -46,12 +68,19 @@ figcaption {
     color: rgba(0, 0, 0, .8);
 }
 
+/*
+ * Main navigation bar (top of site)
+ * Used in _includes/navigation.html
+ */
 .mediumnavigation {
     background: rgba(255, 255, 255, .97);
     box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .15);
     transition: top 0.2s ease-in-out;
 }
 
+/*
+ * Main content area (wraps posts, pages, etc.)
+ */
 .main-content {
     min-height: 300px;
 }
@@ -63,6 +92,9 @@ figcaption {
     transition: all 0.4s;
 }
 
+/*
+ * Section wrappers for home, featured, and category sections
+ */
 section {
     margin-bottom: 20px;
 }
@@ -72,6 +104,7 @@ section.recent-posts {
 }
 
 .section-title h2 {
+    /* Section headings (e.g., Featured, Posts by Category) */
     border-bottom: 1px solid rgba(0, 0, 0, .125);
     margin-bottom: 25px;
     font-weight: 700;
@@ -80,12 +113,17 @@ section.recent-posts {
 }
 
 .section-title span {
+    /* Underline for section headings */
     border-bottom: 1px solid rgba(0, 0, 0, .44);
     display: inline-block;
     padding-bottom: 20px;
     margin-bottom: -1px;
 }
 
+/*
+ * Article post content (lists, etc.)
+ * Used in .article-post in post.html
+ */
 .article-post ol,
 .article-post ul {
     margin-bottom: 1.5rem;
@@ -97,6 +135,10 @@ section.recent-posts {
     margin-bottom: 0rem;
 }
 
+/*
+ * Card columns for featured posts (homepage)
+ * Used in index.html for .card-columns.listfeaturedtag
+ */
 @media (min-width:576px) {
     .card-columns.listfeaturedtag {
         -webkit-column-count: 2;
@@ -105,6 +147,10 @@ section.recent-posts {
     }
 }
 
+/*
+ * Navbar link styles for large screens
+ * Used in navigation bar
+ */
 @media (min-width:992px) {
     .navbar-expand-lg .navbar-nav .nav-link {
         padding-right: 0.8rem;
@@ -121,6 +167,9 @@ section.recent-posts {
     }
 }
 
+/*
+ * Dropdown menu for navigation
+ */
 .navbar-nav-dropdown {
     display: none;
     position: absolute;
@@ -133,6 +182,10 @@ section.recent-posts {
     background-color: rgba(235, 231, 231, 0.788);
 }
 
+/*
+ * Featured post card styles (homepage, post lists)
+ * Used in _includes/featuredbox.html, postlistbox.html, postlistboxtravel.html
+ */
 .listfeaturedtag {
     border: 1px solid rgba(0, 0, 0, .125);
     border-radius: .25rem;
@@ -140,22 +193,26 @@ section.recent-posts {
 }
 
 .listfeaturedtag .wrapthumbnail {
+    /* Container for post thumbnail image */
     height: 290px;
     flex: 0 0 auto;
     height: 100%;
 }
 
 .maxthumb {
+    /* Used for max height on post thumbnails */
     max-height: 500px;
     overflow: hidden;
 }
 
 .listfeaturedtag .card,
 .card-footer {
+    /* Remove border from cards and footers */
     border: 0;
 }
 
 .listfeaturedtag .thumbnail {
+    /* Thumbnail image in featured post card */
     background-size: cover;
     height: 100%;
     display: block;
@@ -166,11 +223,13 @@ section.recent-posts {
 }
 
 .listfeaturedtag .card-block {
+    /* Card content block (post excerpt, etc.) */
     padding-left: 0;
 }
 
 .listfeaturedtag h2.card-title,
 .listrecent h2.card-title {
+    /* Post title in card */
     font-size: 1.3rem;
     font-weight: 700;
     line-height: 1.25;
@@ -178,12 +237,17 @@ section.recent-posts {
 
 .listfeaturedtag h4.card-text,
 .listrecent h4.card-text {
+    /* Post excerpt in card */
     color: rgba(0, 0, 0, .44);
     font-size: 0.95rem;
     line-height: 1.6;
     font-weight: 400;
 }
 
+/*
+ * Featured image in post cards (homepage, lists)
+ * Used in featuredbox.html, postlistbox.html, postlistboxtravel.html
+ */
 .featured-box-img-cover {
     object-fit: cover;
     width: 100%;
@@ -192,6 +256,7 @@ section.recent-posts {
 }
 
 .postlist-box-img-cover {
+    /* Post thumbnail in post lists */
     position: relative;
     object-fit: cover;
     padding: 8px 8px;
@@ -203,6 +268,7 @@ section.recent-posts {
 }
 
 .postlist-box-img-cover:hover {
+    /* Hover effect for post thumbnails */
     filter:brightness(1.125) saturate(1.1);
     transform: scale(1.2);
     transition: all 0.25s ease;
@@ -210,6 +276,7 @@ section.recent-posts {
 
 @media (max-width:991px) {
     .featured-box-img-cover {
+        /* Responsive featured image for mobile */
         height: auto;
         width: 100%;
     }
@@ -217,6 +284,7 @@ section.recent-posts {
 
 @media (max-width:991px) {
     .postlist-box-img-cover {
+        /* Responsive post thumbnail for mobile */
         height: auto;
         width: auto;
         min-width: 25%;
@@ -224,6 +292,10 @@ section.recent-posts {
     }
 }
 
+/*
+ * Footer meta section for post cards (author, date, etc.)
+ * Used in featuredbox.html, postlistbox.html, postlistboxtravel.html, postbox.html
+ */
 .wrapfooter {
     font-size: .8rem;
     display: flex;
@@ -232,12 +304,17 @@ section.recent-posts {
 }
 
 .author-thumb {
+    /* Author avatar in post meta/footer */
     width: 40px;
     height: 40px;
     margin-right: 13px;
     border-radius: 100%;
 }
 
+/*
+ * Post meta section at top of posts (author, date, etc.)
+ * Used in post.html, About page, etc.
+ */
 .post-top-meta {
     display: flex !important;
     align-items: center;
@@ -250,36 +327,46 @@ section.recent-posts {
 .post-top-meta > .col-lg-2,
 .post-top-meta > .col-md-9,
 .post-top-meta > .col-lg-10 {
+    /* Remove padding from meta columns */
     padding-left: 0 !important;
     padding-right: 0 !important;
 }
 
 .post-top-meta .author-thumb {
+    /* Author avatar in post meta */
     margin-right: 8px;
 }
 
 .post-top-meta.authorpage .author-thumb {
+    /* Larger avatar for author page */
     margin-top: 40px;
 }
 
 .post-top-meta span {
+    /* Meta text (author, date, etc.) */
     font-size: 0.9rem;
     color: rgba(0, 0, 0, .44);
     display: inline-block;
 }
 
 .post-top-meta .author-description {
+    /* Author description in post meta */
     margin-bottom: 5px;
     margin-top: 5px;
     font-size: 0.95rem;
 }
 
+/*
+ * Table of contents (TOC) styles for posts
+ * Used in post.html if page.toc is enabled
+ */
 .toc ul {
     list-style: decimal;
     font-weight: 400;
 }
 
 .author-meta {
+    /* Author meta block in post meta/footer */
     flex: 1 1 auto;
     white-space: nowrap !important;
     text-overflow: ellipsis !important;
@@ -289,15 +376,18 @@ section.recent-posts {
 span.post-name,
 span.post-date,
 span.author-meta {
+    /* Inline meta spans for author, date, etc. */
     display: inline-block;
 }
 
 span.post-date,
 span.post-read {
+    /* Muted color for date/read time */
     color: rgba(0, 0, 0, .44);
 }
 
 span.post-read-more {
+    /* Read more link in post meta/footer */
     align-items: center;
     display: inline-block;
     float: right;
@@ -314,11 +404,16 @@ span.post-read-more a:hover {
 }
 
 .dot:after {
+    /* Dot separator for meta info */
     content: "·";
     margin-left: 3px;
     margin-right: 3px;
 }
 
+/*
+ * Medium navigation bar form controls (search, etc.)
+ * Used in .mediumnavigation in the navigation bar
+ */
 .mediumnavigation .form-control {
     font-size: 0.8rem;
     border-radius: 30px;
@@ -328,10 +423,12 @@ span.post-read-more a:hover {
 }
 
 .mediumnavigation .form-inline {
+    /* Inline form layout for navigation bar */
     margin-left: 15px;
 }
 
 .mediumnavigation .form-inline .btn {
+    /* Search/submit button in navigation bar */
     margin-left: -50px;
     border: 0;
     border-radius: 30px;
@@ -340,30 +437,36 @@ span.post-read-more a:hover {
 
 .mediumnavigation .form-inline .btn:hover,
 .mediumnavigation .form-inline .btn:active {
+    /* Button hover/active state in navigation bar */
     background: transparent;
     color: green;
 }
 
 .mediumnavigation .navbar-brand {
+    /* Brand/logo text in navigation bar */
     font-weight: 500;
 }
 
 .mediumnavigation .dropdown-menu {
+    /* Dropdown menu in navigation bar */
     border: 1px solid rgba(0, 0, 0, 0.08);
     margin: .5rem 0 0;
 }
 
 .mediumnavigation .nav-item,
 .dropdown-menu {
+    /* Navigation item and dropdown menu styling */
     font-size: 0.9rem;
     position: relative;
 }
 
 .nav-item:hover .navbar-nav-dropdown {
+    /* Show dropdown on hover */
     display: block;
 }
 
 .mediumnavigation .search-icon {
+    /* Search icon in navigation bar */
     margin-left: -40px;
     display: inline-block;
     margin-top: 3px;
@@ -371,10 +474,15 @@ span.post-read-more a:hover {
 }
 
 .mediumnavigation .navbar-brand img {
+    /* Logo image in navigation bar */
     max-height: 80px;
     margin-right: 5px;
 }
 
+/*
+ * Main heading styles for site and post titles
+ * Used in .mainheading in default.html and post.html
+ */
 .mainheading h1.sitetitle {
     font-family: 'Playfair Display', Righteous, serif;
     font-size: 2.8rem;
@@ -385,10 +493,15 @@ span.post-read-more a:hover {
 }
 
 .mainheading h1.posttitle {
+    /* Post title heading in post.html */
     font-weight: 700;
     margin-bottom: 1rem;
 }
 
+/*
+ * Footer section at the bottom of the site
+ * Used in default.html
+ */
 .footer {
     border-top: 1px solid rgba(0, 0, 0, .05) !important;
     padding-top: 15px;
@@ -402,9 +515,14 @@ span.post-read-more a:hover {
 }
 
 .link-dark {
+    /* Dark link color for author names, etc. */
     color: rgba(0, 0, 0, .8);
 }
 
+/*
+ * Article post content styles
+ * Used in .article-post in post.html
+ */
 .article-post {
     font-family: Merriweather;
     font-size: 1.1rem;
@@ -413,6 +531,7 @@ span.post-read-more a:hover {
 }
 
 blockquote {
+    /* Blockquote styling for quotes in posts */
     border-left: 4px solid #00ab6b;
     padding: 0 20px;
     font-style: italic;
@@ -421,9 +540,14 @@ blockquote {
 
 .article-post p,
 .article-post blockquote {
+    /* Spacing for paragraphs and blockquotes in posts */
     margin: 0 0 1.5rem 0;
 }
 
+/*
+ * Featured image styles for posts
+ * Used in post.html for main images
+ */
 .featured-image {
     display: block;
     margin-bottom: 1.5rem;
@@ -433,6 +557,7 @@ blockquote {
 }
 
 .featured-image-travel {
+    /* Larger featured image for travel posts */
     display: block;
     margin-bottom: 1.5rem;
     margin-left: auto;
@@ -440,26 +565,34 @@ blockquote {
     width: 70%;
 }
 
+/*
+ * Share section for social sharing buttons
+ * Used in _includes/share.html and post.html
+ */
 .share {
     text-align: center;
 }
 
 .share p {
+    /* Share label above buttons */
     margin-bottom: 10px;
     font-size: 0.95rem;
 }
 
 .share ul li {
+    /* Social share button list items */
     display: inline-block;
     margin-bottom: 9px;
 }
 
 .share ul {
+    /* Social share button list */
     padding-left: 0;
     margin-left: 0;
 }
 
 .share ul li i.fa {
+    /* Social share button icons (FontAwesome) */
     border: 1px solid #ddd;
     width: 30px;
     height: 30px;
@@ -468,84 +601,85 @@ blockquote {
     border-radius: 50%;
 }
 
+/* SVG icon styles */
 .svgIcon {
     vertical-align: middle;
 }
 
+/* Sticky top offset styles */
 .sticky-top-offset {
+    /* Used for sticky positioning of share/sidebar elements (e.g., .share in _includes/share.html) */
     top: 100px;
 }
 
 @media (min-width:1024px) {
     .share ul li {
+        /* On large screens, share buttons stack vertically */
         display: block;
     }
 }
 
 @media (max-width:999px) {
     .featured-box-img-cover {
+        /* Adjusts featured image height for smaller screens */
         height: 359px;
     }
-
     .postlist-box-img-cover {
+        /* Responsive adjustment for post list images */
         height: auto;
     }
-
     .alertbar {
+        /* Subscription alert bar adjustments for mobile */
         position: relative !Important;
         margin-bottom: 20px;
         margin-top: 20px;
         box-shadow: none !Important;
         padding-right: 14px !Important;
     }
-
     #comments {
+        /* Comments section margin for mobile */
         margin-right: 15px;
     }
-
     .jumbotron.fortags {
+        /* Jumbotron margin fix for mobile */
         margin-bottom: 0 !Important;
     }
-
     .alertbar form {
+        /* Stack form fields vertically on mobile */
         margin-top: 20px;
     }
-
     .alertbar span,
     .alertbar form {
         display: block;
     }
-
     .alertbar input[type="submit"] {
         border-radius: 3px !Important;
     }
-
     .alertbar input[type="email"] {
         margin-right: 0px !Important;
         display: block;
         border-right: 1px solid #ddd !Important;
         margin-bottom: 10px;
     }
-
     .jumbotron {
         margin-bottom: 0;
         border-radius: 0;
     }
-
     .listfeaturedtag .card {
+        /* Featured post card height auto for mobile */
         height: auto;
     }
-
     .listfeaturedtag .wrapfooter {
+        /* Footer positioning in featured post cards on mobile */
         position: relative;
         margin-top: 30px;
     }
-
     .listfeaturedtag .card-block {
+        /* Padding for card content on mobile */
         padding: 20px;
     }
-
     .footer {
+        /* Footer margin adjustments for mobile */
         margin-top: 0px;
         margin-bottom: 0px;
     }
@@ -553,45 +687,53 @@ blockquote {
 
 @media (max-width:1024px) {
     .post-top-meta .col-md-10 {
+        /* Center post meta on smaller screens */
         text-align: center;
     }
 }
 
 @media (max-width:767px) {
     .post-top-meta.authorpage {
+        /* Center author meta on author pages for mobile */
         text-align: center;
     }
 }
 
 .share,
 .share a {
+    /* Share section and links: muted color for icons/text */
     color: rgba(0, 0, 0, .44);
     fill: rgba(0, 0, 0, .44);
 }
 
 .graybg {
+    /* Light gray background for sections (e.g., About, footer, etc.) */
     background-color: #fafafa;
     padding: 40px 0 46px;
     position: relative;
 }
 
 .listrelated .card {
+    /* Card styling for related posts section */
     box-shadow: 0 1px 7px rgba(0, 0, 0, .05);
     border: 0;
 }
 
 ul.tags {
+    /* Tag list styling for post tags */
     list-style: none;
     padding-left: 0;
     margin: 0 0 3rem 0;
 }
 
 ul.tags li {
+    /* Tag item styling */
     display: inline-block;
     font-size: 0.9rem;
 }
 
 ul.tags li a {
+    /* Tag link styling */
     background: rgba(0, 0, 0, .05);
     color: rgba(0, 0, 0, .6);
     border-radius: 3px;
@@ -599,15 +741,18 @@ ul.tags li a {
 }
 
 ul.tags li a:hover {
+    /* Tag link hover effect */
     background: rgba(0, 0, 0, .07);
     text-decoration: none;
 }
 
 .margtop3rem {
+    /* Utility: margin top 3rem */
     margin-top: 3rem;
 }
 
 .sep {
+    /* Separator line, e.g., in share box */
     height: 1px;
     width: 20px;
     background: #999;
@@ -616,6 +761,7 @@ ul.tags li a:hover {
 }
 
 .btn.follow {
+    /* Follow button (author, post meta, etc.) */
     border-color: #02B875;
     color: #1C9963;
     padding: 3px 10px;
@@ -626,6 +772,7 @@ ul.tags li a:hover {
 }
 
 .btn.subscribe {
+    /* Subscribe button (newsletter, etc.) */
     background-color: #1C9963;
     border-color: #1C9963;
     color: rgba(255, 255, 255, 1);
@@ -638,11 +785,13 @@ ul.tags li a:hover {
 }
 
 .post-top-meta .btn.follow {
+    /* Follow button in post meta section */
     margin-left: 5px;
     margin-top: -4px;
 }
 
 .alertbar {
+    /* Fixed subscription alert bar at bottom of site (see _layouts/default.html) */
     box-shadow: 0 -3px 10px 0 rgba(0, 0, 0, .0785);
     position: fixed;
     bottom: 0;
@@ -655,10 +804,12 @@ ul.tags li a:hover {
 }
 
 .alertbar form {
+    /* Inline form in alertbar */
     display: inline-block;
 }
 
 .alertbar input[type="email"] {
+    /* Email input in alertbar */
     font-size: 0.85rem;
     padding: 3px 5px 3px 10px;
     border-top-left-radius: 3px;
@@ -672,6 +823,7 @@ ul.tags li a:hover {
 }
 
 .alertbar input[type="submit"] {
+    /* Submit button in alertbar */
     background-color: #1C9963;
     border: 1px solid #1C9963;
     color: rgba(255, 255, 255, 1);
@@ -688,40 +840,41 @@ ul.tags li a:hover {
 }
 
 .form-control::-webkit-input-placeholder {
+    /* Placeholder color for form controls (cross-browser) */
     color: rgba(0, 0, 0, .5);
 }
-
 .form-control:-moz-placeholder {
     color: rgba(0, 0, 0, .5);
 }
-
 .form-control::-moz-placeholder {
     color: rgba(0, 0, 0, .5);
 }
-
 .form-control:-ms-input-placeholder {
     color: rgba(0, 0, 0, .5);
 }
-
 .form-control::-ms-input-placeholder {
     color: rgba(0, 0, 0, .5);
 }
 
 .authorpage h1 {
+    /* Author page main heading */
     font-weight: 700;
     font-size: 30px;
 }
 
 .post-top-meta.authorpage .author-thumb {
+    /* Author avatar on author page */
     float: none;
 }
 
 .authorpage .author-description {
+    /* Author description on author page */
     font-size: 1rem;
     color: rgba(0, 0, 0, .6);
 }
 
 .post-top-meta.authorpage .btn.follow {
+    /* Follow button on author page */
     padding: 7px 20px;
     margin-top: 10px;
     margin-left: 0;
@@ -729,10 +882,12 @@ ul.tags li a:hover {
 }
 
 .graybg.authorpage {
+    /* Gray background for author page sections */
     border-top: 1px solid #f0f0f0;
 }
 
 .authorpostbox {
+    /* Author info box on author page */
     width: 760px;
     margin: 0px auto;
     margin-bottom: 1.5rem;
@@ -740,14 +895,17 @@ ul.tags li a:hover {
 }
 
 .authorpostbox .img-thumb {
+    /* Author image in author info box */
     width: 100%;
 }
 
 .sociallinks {
+    /* Social icon links (e.g., About page) */
     margin: 1rem 0;
 }
 
 .sociallinks a {
+    /* Social icon button styling */
     background: #666;
     color: #fff;
     width: 22px;
@@ -760,6 +918,7 @@ ul.tags li a:hover {
 }
 
 #comments {
+    /* Comments section spacing */
     margin-top: 3rem;
     margin-bottom: 1.5rem;
 }
@@ -776,6 +935,7 @@ h3,
 h4,
 h5,
 h6 {
+    /* Heading font family for consistency */
     font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
@@ -791,30 +951,36 @@ h6 {
 .article-post h4,
 .article-post h5,
 .article-post h6 {
+    /* Headings inside article posts */
     font-weight: 700;
     margin-bottom: 1.5rem;
 }
 
 .article-post img.shadow {
+    /* Drop shadow for images in posts */
     -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.30);
     -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.30);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.30);
 }
 
 .layout-page .article-post {
+    /* Article post font for layout pages */
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-size: 1rem;
 }
 
 .layout-page .article-post p {
+    /* Paragraph spacing in layout pages */
     margin-bottom: 1rem;
 }
 
 img {
+    /* Responsive images */
     max-width: 100%;
 }
 
 .bottompagination span.navigation {
+    /* Pagination navigation styling */
     display: block;
     font-size: 0.93rem;
     padding: 15px 0 0 0;
@@ -825,20 +991,24 @@ img {
 }
 
 .pointerup {
+    /* Back to top arrow/button */
     margin-bottom: -17px;
     margin-left: 49%;
     font-size: 30px;
 }
 
 .pointerup i.fa {
+    /* Icon color for pointerup */
     color: #eaeaea;
 }
 
 .bottompagination span.navigation i {
+    /* Icon in pagination navigation */
     display: inline-block;
 }
 
 span.navigation {
+    /* Inline navigation span styling */
     display: inline-block;
     font-size: 0.93rem;
     font-weight: 700;
@@ -846,20 +1016,24 @@ span.navigation {
 }
 
 .pagination {
+    /* Pagination container */
     display: block;
 }
 
 iframe {
+    /* Responsive iframes */
     max-width: 100%;
 }
 
 .transpdark {
+    /* Transparent dark background utility */
     background: rgba(0, 0, 0, 0.75);
     color: #fff;
 }
 
 @media (min-width:768px) {
     .jumbotron.fortags {
+        /* Jumbotron hero section for tags page (desktop) */
         margin-bottom: -50px;
         margin-top: 3rem;
         padding: 0;
@@ -868,18 +1042,18 @@ iframe {
         background-image: url(../images/jumbotron.jpg);
         background-size: cover;
     }
-
     .jumbotron.fortags .col-md-4 {
+        /* Overlay for text in jumbotron */
         background: rgba(0, 0, 0, 0.75);
         color: #fff;
     }
-
     .jumbotron.fortags .row {
         margin: 0;
     }
 }
 
 .jumbotron.fortags {
+    /* Jumbotron hero section for tags page (mobile) */
     margin-top: 3rem;
     padding: 0;
     border-radius: 0;
@@ -888,6 +1062,7 @@ iframe {
 }
 
 .jumbotron.fortags a {
+    /* Tag links in jumbotron */
     padding: 5px 10px 7px;
     background: #222;
     border-radius: 30px;
@@ -899,14 +1074,17 @@ iframe {
 }
 
 .layout-page .jumbotron.fortags {
+    /* Hide jumbotron on some layout pages */
     display: none;
 }
 
 .mb-30px {
+    /* Utility: margin bottom 30px */
     margin-bottom: 30px;
 }
 
 .flex-first {
+    /* Flexbox utility for ordering */
     -webkit-box-ordinal-group: 0;
     -webkit-order: -1;
     -ms-flex-order: -1;
@@ -915,12 +1093,12 @@ iframe {
 
 @media (min-width: 768px) {
     .flex-md-unordered {
+        /* Flexbox utility for ordering on desktop */
         -webkit-box-ordinal-group: 1;
         -webkit-order: 1;
         -ms-flex-order: 1;
         order: 1;
     }
-
     .flex-first {
         -webkit-box-ordinal-group: 0;
         -webkit-order: 1;
@@ -931,19 +1109,23 @@ iframe {
 
 @media (max-width: 768px) {
     .share {
+        /* Share section margin for mobile */
         margin-top: 30px;
     }
 }
 
 .card .img-fluid {
+    /* Responsive card images */
     width: 100%;
 }
 
 .sticky-top-80 {
+    /* Sticky offset for sidebar widgets (e.g., About page recent activity) */
     top: 80px;
 }
 
 .spoiler {
+    /* Spoiler text: hidden until clicked (see assets/js/mediumish.js) */
     color: transparent;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     transition: all .4s;
@@ -952,6 +1134,7 @@ iframe {
 }
 
 .spoiler:after {
+    /* Spoiler reveal message overlay */
     position: absolute;
     opacity: 0;
     content: 'Click to reveal spoiler';
@@ -972,11 +1155,13 @@ iframe {
 }
 
 .spoiler:hover:after {
+    /* Show spoiler message on hover */
     opacity: 1;
 }
 
 /** Lazy img **/
 .lazyimg {
+    /* Lazy-loaded images (see postlist, featuredbox, etc.) */
     display: block;
     border: 0 none;
     opacity: 1;
@@ -987,20 +1172,24 @@ iframe {
 
 .lazyimg[data-src],
 .lazyimg[data-srcset] {
+    /* Hide lazy images until loaded */
     opacity: 0;
     transition: opacity .25s;
 }
 
 .imageCollageRow {
+    /* Flex row for image collages (see post.html) */
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px;
 }
 .imageCollageColumn {
+    /* Flex column for image collages */
     flex: 50%;
     padding: 0 4px;
 }
 .imageCollageColumn img {
+    /* Images in collage columns */
     margin-top: 4px;
     vertical-align: middle;
     margin-bottom: 4px;
@@ -1010,20 +1199,24 @@ iframe {
 }
 
 .imageCollageTravelPageRow {
+    /* Flex row for travel page image collages (see imagesCollage.html) */
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px;
 }
 .imageCollageTravelPageColumn {
+    /* Flex column for travel page image collages */
     flex: 50%;
     padding: 0 4px;
 }
 .imageCollageTravelPageColumn img {
+    /* Images in travel collage columns */
     margin-top: 4px;
     vertical-align: middle;
     margin-bottom: 4px;
 }
 .imageCollageTravelPageColumn img:hover{
+    /* Hover effect for travel collage images */
     margin-top: 4px;
     vertical-align: middle;
     margin-bottom: 4px;
@@ -1033,10 +1226,12 @@ iframe {
 }
 
 .imageContainerWithOverlay {
+    /* Container for images with overlay captions (see post.html) */
     position: relative;
     overflow: hidden;
 }
 .imageOverlay {
+    /* Overlay caption for images */
     position: absolute;
     bottom: 10px;
     right: 10px;
@@ -1052,38 +1247,46 @@ iframe {
     text-align: center;
 }
 .imageContainerWithOverlay:hover .imageOverlay {
+    /* Show overlay on hover */
     opacity: 1;
 }
 
 .strava-frame {
+    /* Embedded Strava activity iframe (see post.html) */
     display:block;
     align-items: center;
 }
 
 .like-button .likebtn-wrapper {
+    /* Like button wrapper (if like button is enabled) */
     float: center;
 }
 
 html {
+    /* Enable smooth scrolling for anchor links */
     scroll-behavior: smooth;
 }
 
 .author-header {
+    /* Flexbox layout for author header (About page, etc.) */
     display: flex;
     align-items: center;
     margin-bottom: 0.25rem;
 }
 .author-header .link-dark {
+    /* Author name/link in header */
     font-size: 1.1rem;
     font-weight: 600;
     margin-right: 0.5rem;
 }
 .author-header .btn.follow {
+    /* Follow button in author header */
     margin-left: 0.5rem;
     padding: 2px 14px;
     font-size: 0.95rem;
 }
 .author-description {
+    /* Author description in header */
     display: block;
     margin-top: 0.25rem;
     font-size: 0.97rem;
@@ -1091,18 +1294,21 @@ html {
 }
 
 .author-flexbox {
+    /* Flexbox layout for author info (About page, post meta, etc.) */
     display: flex;
     align-items: center;
     gap: 10px;
     margin-bottom: 2rem;
 }
 .author-flexbox .author-thumb {
+    /* Author avatar in flexbox layout */
     width: 72px;
     height: 72px;
     margin-right: 0;
     flex-shrink: 0;
 }
 .author-info-block {
+    /* Block for author info text in flexbox layout */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1117,6 +1323,7 @@ html {
 
 /* Consolidated inline CSS from _pages/about.md */
 .social-buttons .btn {
+    /* Social connect buttons (About page) */
     width: 100%;
     text-align: left;
     padding: 8px 15px;
@@ -1125,21 +1332,25 @@ html {
     transition: all 0.3s ease;
 }
 .social-buttons .btn:hover {
+    /* Hover effect for social connect buttons */
     transform: translateY(-2px);
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 .social-buttons .btn i {
+    /* Icon in social connect button */
     margin-right: 10px;
     width: 20px;
     text-align: center;
 }
 .strava-feed, .twitter-feed {
+    /* Strava and Twitter activity feed boxes (About page sidebar) */
     background: #f8f9fa;
     padding: 15px;
     border-radius: 8px;
     margin-bottom: 20px;
 }
 .strava-feed h6, .twitter-feed h6 {
+    /* Headings for activity feeds */
     margin-bottom: 15px;
     color: #333;
 }
