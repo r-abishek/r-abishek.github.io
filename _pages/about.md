@@ -47,8 +47,11 @@ comments: false
             <!-- Recent Activity Feeds -->
             <h5>Recent Activity</h5>
             <!-- Strava Feed -->
-            <div class="strava-feed mb-4">
-                <h6><i class="fab fa-strava"></i> Recent Strava Activity</h6>
+            <div class="strava-feed mb-4" style="position: relative;">
+                <a href="https://www.strava.com/athletes/abishekr92" class="strava-badge- strava-badge-follow" target="_blank" style="position: absolute; top: 12px; right: 12px; z-index: 2;">
+                    <img src="//badges.strava.com/echelon-sprite-48.png" alt="Strava" style="height: 40px; width: 40px;" />
+                </a>
+                <h6><i class="fab fa-strava"></i> Strava</h6>
                 <style>
                     .strava-badge- { display: inline-block; height: 48px; }
                     .strava-badge- img { visibility: hidden; height: 48px; }
@@ -63,9 +66,6 @@ comments: false
                         margin-bottom: 20px;
                     }
                 </style>
-                <a href="https://www.strava.com/athletes/abishekr92" class="strava-badge- strava-badge-follow" target="_blank">
-                    <img src="//badges.strava.com/echelon-sprite-48.png" alt="Strava" />
-                </a>
                 <div class="strava-scroll-container">
                     <div class="strava-embed-placeholder" data-embed-type="activity" data-embed-id="14225935071" data-style="standard" data-from-embed="false"></div><script src="https://strava-embeds.com/embed.js"></script>
                     <div class="strava-embed-placeholder" data-embed-type="activity" data-embed-id="12294371284" data-style="standard" data-from-embed="false"></div><script src="https://strava-embeds.com/embed.js"></script>
@@ -87,8 +87,11 @@ comments: false
                 <script src="https://strava-embeds.com/embed.js"></script>
             </div>
             <!-- X (Twitter) Feed -->
-            <div class="twitter-feed">
-                <h6><i class="fa-brands fa-x-twitter"></i> Recent Posts on X</h6>
+            <div class="twitter-feed" style="position: relative;">
+                <a href="https://twitter.com/abishekr92" target="_blank" style="position: absolute; top: 12px; right: 12px; z-index: 2; color: #000; font-size: 2rem;">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <h6><i class="fa-brands fa-x-twitter"></i> X</h6>
                 <div align="center">
                     <a class="twitter-timeline" data-theme="dark" href="https://twitter.com/abishekr92?ref_src=twsrc%5Etfw">
                         Posts by abishekr92
