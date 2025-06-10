@@ -1052,3 +1052,25 @@ iframe {
 html {
     scroll-behavior: smooth;
 }
+
+.author-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.25rem;
+}
+.author-header .link-dark {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-right: 0.5rem;
+}
+.author-header .btn.follow {
+    margin-left: 0.5rem;
+    padding: 2px 14px;
+    font-size: 0.95rem;
+}
+.author-description {
+    display: block;
+    margin-top: 0.25rem;
+    font-size: 0.97rem;
+    color: rgba(0,0,0,0.6);
+}
