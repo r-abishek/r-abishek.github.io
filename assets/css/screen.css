@@ -1354,3 +1354,31 @@ html {
     margin-bottom: 15px;
     color: #333;
 }
+.strava-feed h6 {
+    /* Strava heading with larger icon and font to align with badge */
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+.strava-feed h6 i {
+    /* Strava icon sized to match badge height */
+    font-size: 1.5rem;
+    margin-right: 8px;
+}
+.twitter-feed h6 {
+    /* Twitter heading with larger icon and font to align with X logo */
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+.twitter-feed h6 i {
+    /* Twitter icon sized to match X logo */
+    font-size: 1.5rem;
+    margin-right: 8px;
+}

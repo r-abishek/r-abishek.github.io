@@ -91,10 +91,10 @@ comments: false
                 <a href="https://twitter.com/abishekr92" target="_blank" style="position: absolute; top: 12px; right: 12px; z-index: 2; color: #000; font-size: 2rem;">
                     <i class="fa-brands fa-x-twitter"></i>
                 </a>
-                <h6><i class="fa-brands fa-x-twitter"></i> X</h6>
+                <h6><i class="fa-brands fa-x-twitter"></i> Twitter</h6>
                 <div align="center">
                     <a class="twitter-timeline" data-theme="dark" href="https://twitter.com/abishekr92?ref_src=twsrc%5Etfw">
-                        Posts by abishekr92
+                        Posts
                     </a>
                 </div>
                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
