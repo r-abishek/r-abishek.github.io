@@ -64,12 +64,22 @@ function performLiveSearch(term) {
     var results = idx.search(term + '*'); // Add wildcard for partial matching
     var searchResults = document.getElementById('search-dropdown-results');
     
-    if (results.length > 0) {
+    // Filter results to only include posts
+    var postResults = [];
+    for (var i = 0; i < results.length; i++) {
+        var ref = results[i]['ref'];
+        var doc = documents[ref];
+        if (doc.type === 'post') {
+            postResults.push(results[i]);
+        }
+    }
+    
+    if (postResults.length > 0) {
         var html = '';
-        var maxResults = Math.min(results.length, 6); // Limit to 6 results
+        var maxResults = Math.min(postResults.length, 6); // Limit to 6 results
         
         for (var i = 0; i < maxResults; i++) {
-            var ref = results[i]['ref'];
+            var ref = postResults[i]['ref'];
             var doc = documents[ref];
             var title = doc.title;
             var body = doc.body.substring(0, 120) + '...';
@@ -84,24 +94,22 @@ function performLiveSearch(term) {
             html += '  </div>';
             html += '  <div class="search-result-content">';
             html += '    <div class="search-result-title">' + title + '</div>';
-            if (type === 'post' && (date || category)) {
-                html += '    <div class="search-result-meta">';
-                if (category) html += '<span class="search-result-category">' + category + '</span>';
-                if (date) html += '<span class="search-result-date">' + date + '</span>';
-                html += '    </div>';
-            }
+            html += '    <div class="search-result-meta">';
+            if (category) html += '<span class="search-result-category">' + category + '</span>';
+            if (date) html += '<span class="search-result-date">' + date + '</span>';
+            html += '    </div>';
             html += '    <div class="search-result-excerpt">' + body + '</div>';
             html += '  </div>';
             html += '</div>';
         }
         
-        if (results.length > 6) {
-            html += '<div class="search-result-more">+ ' + (results.length - 6) + ' more results</div>';
+        if (postResults.length > 6) {
+            html += '<div class="search-result-more">+ ' + (postResults.length - 6) + ' more posts</div>';
         }
         
         searchResults.innerHTML = html;
     } else {
-        searchResults.innerHTML = '<div class="search-result-empty">No results found for "' + term + '"</div>';
+        searchResults.innerHTML = '<div class="search-result-empty">No posts found for "' + term + '"</div>';
     }
 }
 
