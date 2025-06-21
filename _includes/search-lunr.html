@@ -1,10 +1,16 @@
 <script src="{{site.baseurl}}/assets/js/lunr.js"></script>
 
-<form class="bd-search" onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
-    <input type="text" class="form-control text-small launch-modal-search" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Type and enter..."/>
-</form>
+<div class="search-container">
+    <form class="bd-search" onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
+        <div class="search-input-wrapper">
+            <input type="text" class="form-control text-small launch-modal-search" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Search posts..." autocomplete="off"/>
+            <i class="fas fa-search search-icon"></i>
+        </div>
+    </form>
+</div>
 
-<div id="lunrsearchresults">
+<!-- Legacy search results container (kept for compatibility) -->
+<div id="lunrsearchresults" style="display: none;">
     <ul></ul>
 </div>
 

@@ -1333,7 +1333,192 @@ html {
     justify-content: center;
 }
 
-/* Consolidated inline CSS from _includes/search-lunr.html */
+/* Modern Live Search Styling */
+.search-container {
+    /* Container for the search interface */
+    position: relative;
+    display: inline-block;
+}
+
+.search-input-wrapper {
+    /* Wrapper for search input and icon */
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-input-wrapper .form-control {
+    /* Modern search input styling */
+    border-radius: 25px;
+    padding-right: 40px;
+    border: 2px solid #e9ecef;
+    transition: all 0.3s ease;
+    background: #f8f9fa;
+    min-width: 250px;
+}
+
+.search-input-wrapper .form-control:focus {
+    /* Focus state for search input */
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    background: #fff;
+}
+
+.search-icon {
+    /* Search icon positioning */
+    position: absolute;
+    right: 15px;
+    color: #6c757d;
+    pointer-events: none;
+    font-size: 14px;
+}
+
+.search-dropdown {
+    /* Dropdown container for search results */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    max-height: 400px;
+    overflow-y: auto;
+    margin-top: 5px;
+    display: none;
+}
+
+.search-result-item {
+    /* Individual search result item */
+    display: flex;
+    padding: 12px;
+    border-bottom: 1px solid #f8f9fa;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.search-result-item:hover {
+    /* Hover effect for search result items */
+    background-color: #f8f9fa;
+}
+
+.search-result-item:last-child {
+    /* Remove border from last item */
+    border-bottom: none;
+}
+
+.search-result-image {
+    /* Container for post thumbnail */
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    margin-right: 12px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.search-result-image img {
+    /* Post thumbnail styling */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.search-result-content {
+    /* Content area for search result text */
+    flex: 1;
+    min-width: 0;
+}
+
+.search-result-title {
+    /* Title of search result */
+    font-weight: 600;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 4px;
+    line-height: 1.3;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.search-result-meta {
+    /* Meta information (category, date) */
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 4px;
+}
+
+.search-result-category {
+    /* Category badge */
+    background: #e9ecef;
+    color: #495057;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.search-result-date {
+    /* Date display */
+    color: #6c757d;
+    font-size: 11px;
+}
+
+.search-result-excerpt {
+    /* Post excerpt text */
+    color: #6c757d;
+    font-size: 12px;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.search-result-more {
+    /* "More results" indicator */
+    padding: 10px 12px;
+    text-align: center;
+    color: #6c757d;
+    font-size: 12px;
+    font-style: italic;
+    border-top: 1px solid #f8f9fa;
+}
+
+.search-result-empty {
+    /* Empty state message */
+    padding: 20px;
+    text-align: center;
+    color: #6c757d;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .search-input-wrapper .form-control {
+        /* Responsive search input for mobile */
+        min-width: 200px;
+    }
+    
+    .search-result-image {
+        /* Smaller thumbnails on mobile */
+        width: 50px;
+        height: 50px;
+    }
+    
+    .search-result-title {
+        /* Smaller title on mobile */
+        font-size: 13px;
+    }
+}
+
+/* Legacy search results styling (kept for compatibility) */
 .lunrsearchresult .title { color: #d9230f; }
 .lunrsearchresult .url { color: silver; }
 .lunrsearchresult a { display: block; color: #777; }
