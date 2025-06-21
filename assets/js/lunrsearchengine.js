@@ -76,7 +76,7 @@ function performLiveSearch(term) {
     
     if (postResults.length > 0) {
         var html = '';
-        var maxResults = Math.min(postResults.length, 6); // Limit to 6 results
+        var maxResults = Math.min(postResults.length, 10); // Limit to 10 results
         
         for (var i = 0; i < maxResults; i++) {
             var ref = postResults[i]['ref'];
@@ -106,8 +106,8 @@ function performLiveSearch(term) {
             html += '</div>';
         }
         
-        if (postResults.length > 6) {
-            html += '<div class="search-result-more">+ ' + (postResults.length - 6) + ' more posts</div>';
+        if (postResults.length > 10) {
+            html += '<div class="search-result-more" onclick="showAllResults(\'' + term + '\', ' + postResults.length + ')">+ ' + (postResults.length - 10) + ' more posts - Click to view all</div>';
         }
         
         searchResults.innerHTML = html;
@@ -126,6 +126,72 @@ function hideSearchResults() {
     var dropdown = document.getElementById('search-dropdown');
     dropdown.style.display = 'none';
     isSearchVisible = false;
+}
+
+function showAllResults(term, totalCount) {
+    var results = idx.search(term + '*');
+    
+    // Filter results to only include posts
+    var postResults = [];
+    for (var i = 0; i < results.length; i++) {
+        var ref = results[i]['ref'];
+        var doc = documents[ref];
+        if (doc.type === 'post') {
+            postResults.push(results[i]);
+        }
+    }
+    
+    // Create modal for all results
+    var modalHtml = '<div id="all-results-modal" class="search-modal-overlay" onclick="closeAllResultsModal()">';
+    modalHtml += '  <div class="search-modal-content" onclick="event.stopPropagation()">';
+    modalHtml += '    <div class="search-modal-header">';
+    modalHtml += '      <h3>All search results for "' + term + '" (' + postResults.length + ' posts)</h3>';
+    modalHtml += '      <button class="search-modal-close" onclick="closeAllResultsModal()">&times;</button>';
+    modalHtml += '    </div>';
+    modalHtml += '    <div class="search-modal-body">';
+    
+    for (var i = 0; i < postResults.length; i++) {
+        var ref = postResults[i]['ref'];
+        var doc = documents[ref];
+        var title = doc.title;
+        var body = doc.body.substring(0, 150) + '...';
+        var image = doc.image;
+        var date = doc.date;
+        var category = doc.category;
+        
+        modalHtml += '<div class="search-modal-item" onclick="window.location.href=\'' + doc.url + '\'">';
+        modalHtml += '  <div class="search-modal-image">';
+        modalHtml += '    <img src="' + image + '" alt="' + title + '" onerror="this.src=\'{{ site.baseurl }}/assets/images/dpedit04.png\'">';
+        modalHtml += '  </div>';
+        modalHtml += '  <div class="search-modal-content-text">';
+        modalHtml += '    <div class="search-modal-title">' + title + '</div>';
+        modalHtml += '    <div class="search-modal-meta">';
+        if (category) {
+            var categoryClass = 'category-' + category.toLowerCase().replace(/\s+/g, '-');
+            modalHtml += '<span class="search-result-category ' + categoryClass + '">' + category + '</span>';
+        }
+        if (date) modalHtml += '<span class="search-result-date">' + date + '</span>';
+        modalHtml += '    </div>';
+        modalHtml += '    <div class="search-modal-excerpt">' + body + '</div>';
+        modalHtml += '  </div>';
+        modalHtml += '</div>';
+    }
+    
+    modalHtml += '    </div>';
+    modalHtml += '  </div>';
+    modalHtml += '</div>';
+    
+    // Add modal to page
+    document.body.insertAdjacentHTML('beforeend', modalHtml);
+    document.body.style.overflow = 'hidden';
+}
+
+function closeAllResultsModal() {
+    var modal = document.getElementById('all-results-modal');
+    if (modal) {
+        modal.remove();
+        document.body.style.overflow = 'auto';
+    }
 }
 
 function setupLiveSearch() {
