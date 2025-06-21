@@ -26,7 +26,7 @@ var documents = [{% for page in site.pages %}{% if page.url contains '.xml' or p
     "id": {{ counter }},
     "url": "{{ site.url }}{{site.baseurl}}{{ page.url }}",
     "title": "{{ page.title }}",
-    "body": "{{ page.date | date: "%Y/%m/%d" }} - {{ page.content | markdownify | replace: '.', '. ' | replace: '</h2>', ': ' | replace: '</h3>', ': ' | replace: '</h4>', ': ' | replace: '</p>', ' ' | strip_html | strip_newlines | replace: '  ', ' ' | replace: '"', ' ' }}",
+    "body": "{{ page.content | markdownify | replace: '.', '. ' | replace: '</h2>', ': ' | replace: '</h3>', ': ' | replace: '</h4>', ': ' | replace: '</p>', ' ' | strip_html | strip_newlines | replace: '  ', ' ' | replace: '"', ' ' }}",
     "image": "{% if page.image1 %}{% if page.image1 contains "://" %}{{ page.image1 }}{% else %}{{ site.baseurl }}/{{ page.image1 }}{% endif %}{% else %}{{ site.baseurl }}/assets/images/dpedit04.png{% endif %}",
     "date": "{{ page.date | date: "%B %d, %Y" }}",
     "category": "{% if page.categories[0] %}{{ page.categories[0] }}{% endif %}",
@@ -95,7 +95,10 @@ function performLiveSearch(term) {
             html += '  <div class="search-result-content">';
             html += '    <div class="search-result-title">' + title + '</div>';
             html += '    <div class="search-result-meta">';
-            if (category) html += '<span class="search-result-category">' + category + '</span>';
+            if (category) {
+                var categoryClass = 'category-' + category.toLowerCase().replace(/\s+/g, '-');
+                html += '<span class="search-result-category ' + categoryClass + '">' + category + '</span>';
+            }
             if (date) html += '<span class="search-result-date">' + date + '</span>';
             html += '    </div>';
             html += '    <div class="search-result-excerpt">' + body + '</div>';
