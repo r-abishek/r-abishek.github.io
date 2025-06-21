@@ -31,8 +31,15 @@ post_class: post-template
                     {% endif %}
                     <div class="author-info-block">
                         <div class="author-header d-flex align-items-center mb-1">
-                            <a target="_blank" class="link-dark font-weight-bold mr-2" href="{{ author.web }}">{{ author.display_name }}</a>
-                            <a target="_blank" href="{{ author.twitter }}" class="btn follow ml-2">Follow</a>
+                            <a class="link-dark font-weight-bold mr-2" href="{{ site.baseurl }}/about">{{ author.display_name }}</a>
+                            <div class="author-social-links ml-2">
+                                <a target="_blank" href="https://www.linkedin.com/in/abishekr1" class="author-social-link mr-2" title="LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a target="_blank" href="{{ author.twitter }}" class="author-social-link" title="X (Twitter)">
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                </a>
+                            </div>
                         </div>
                         <span class="author-description mt-1">{{ author.description }}</span>
                     </div>

@@ -1279,11 +1279,30 @@ html {
     font-weight: 600;
     margin-right: 0.5rem;
 }
-.author-header .btn.follow {
-    /* Follow button in author header */
-    margin-left: 0.5rem;
-    padding: 2px 14px;
-    font-size: 0.95rem;
+.author-social-links {
+    /* Container for social links in author header */
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.author-social-link {
+    /* Individual social link in author header */
+    color: #666;
+    font-size: 1.1rem;
+    transition: color 0.2s ease;
+    text-decoration: none;
+}
+.author-social-link:hover {
+    /* Hover effect for social links */
+    text-decoration: none;
+}
+.author-social-link[href*="linkedin"]:hover {
+    /* LinkedIn hover color */
+    color: #0077b5;
+}
+.author-social-link[href*="twitter"]:hover {
+    /* X/Twitter hover color */
+    color: #000;
 }
 .author-description {
     /* Author description in header */
