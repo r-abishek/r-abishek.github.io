@@ -7,19 +7,18 @@ comments: false
 
 <div class="row justify-content-between">
     <div class="col-md-8 pr-5">
-        <p>Welcome to my corner of the internet! I'm Abishek, a technology enthusiast with varied interests in anything from semiconductors, GPUs and accelerators for high performance compute, the chip revolution, the ai evolution, to aviation, physics, stories behind scientific discoveries, and quantum tech.</p>
+        <p>Welcome to my corner of the internet! I'm Abishek, a technology enthusiast with varied interests. My curiosity binges lately usually include semiconductors, GPUs, accelerators for high performance compute, the chip revolution, the AI evolution, commercial/general aviation, physics, geopolitics and quantum computers.</p>
 
-        <p>This space is where I share some travel destinations and books that have shaped my understanding of the world. Some of the book-notes / summaries here explore the intersection of science, technology, human achievement, and self development that I've found quite useful.</p>
+        <p>This space is where I share some travel destinations and books that have shaped my understanding of the world. Some of the book-notes / summaries here explore the intersection of technology, human achievement, and self development that I've found quite useful.</p>
 
         <p>My reading journey often takes me through:</p>
         <ul>
-            <li> Scientific Discoveries : The stories behind breakthroughs that changed our understanding of the universe so far.</li>
             <li>Technological Innovation : How new technologies are reshaping our world and what's in store for the foreseeable future.</li>
             <li>Human Achievement : The remarkable stories of people who pushed the boundaries of what's possible.</li>
-            <li>Personal Development : Books that help us understand ourselves and our place in the world.</li>
+            <li>Personal Development : Understanding ourselves and our place in the world.</li>
         </ul>
 
-        <p>Exploring the great outdoors, sharing best travel experiences, tracking hikes and adventures on Strava, or sharing good reads on technology and science on X(Twitter) are of interest to me.</p>
+        <p>Other intersts - Exploring the great outdoors, sharing best travel experiences, tracking hikes and adventures on Strava, sharing good reads on technology on X(Twitter).</p>
 
         <p>I believe in the power of continuous learning and the importance of understanding our world better!</p>
 
