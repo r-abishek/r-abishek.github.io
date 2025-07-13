@@ -799,7 +799,7 @@ ul.tags li a:hover {
     background-color: #fff;
     width: 100%;
     padding: 14px 0;
-    z-index: 1;
+    z-index: 999999 !important;
     display: none;
 }
 
@@ -1820,6 +1820,14 @@ html {
     padding: 15px;
     border-radius: 8px;
     margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.strava-feed *, .twitter-feed * {
+    /* Ensure all child elements stay behind subscribe panel */
+    position: relative;
+    z-index: 1 !important;
 }
 .strava-feed h6, .twitter-feed h6 {
     /* Headings for activity feeds */
@@ -1853,4 +1861,21 @@ html {
     /* Twitter icon sized to match X logo */
     font-size: 1.5rem;
     margin-right: 8px;
+}
+
+/* Force embedded widgets to stay behind subscribe panel */
+iframe, embed, object, 
+.twitter-timeline, .twitter-tweet, .twitter-timeline-rendered,
+.strava-embed-placeholder {
+    position: relative !important;
+    z-index: 1 !important;
+}
+
+
+
+/* Additional fallback for any embedded content */
+.strava-feed iframe, .strava-feed embed, .strava-feed object,
+.twitter-feed iframe, .twitter-feed embed, .twitter-feed object {
+    z-index: 1 !important;
+    position: relative !important;
 }
