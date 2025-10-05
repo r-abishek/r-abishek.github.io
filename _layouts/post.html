@@ -66,18 +66,18 @@ post_class: post-template
             {% endif %} -->
             <!-- End Post Featured Video1 -->
 
-            <!-- Post Featured Image1 -->
-            {% if page.image1 %}
+            <!-- Post Featured Image -->
+            {% if page.featuredImage %}
             <figure>
             {% if site.lazyimages == "enabled" %}
-            <img class="featured-image img-fluid lazyimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="{% if page.image1 contains "://" %}{{ page.image1 }}{% else %}{{ site.baseurl }}/{{ page.image1 }}{% endif %}" alt="{{ page.image1Caption }}">
+            <img class="featured-image img-fluid lazyimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="{% if page.featuredImage contains "://" %}{{ page.featuredImage }}{% else %}{{ site.baseurl }}/{{ page.featuredImage }}{% endif %}" alt="{{ page.featuredImageCaption }}">
             {% else %}
-            <img class="{% if page.categories[0] == 'Travel' %} featured-image-travel img-fluid {% else %} featured-image img-fluid {% endif %}" src="{% if page.image1 contains "://" %}{{ page.image1 }}{% else %}{{ site.baseurl }}/{{ page.image1 }}{% endif %}" alt="{{ page.image1Caption }}">
+            <img class="{% if page.categories[0] == 'Travel' %} featured-image-travel img-fluid {% else %} featured-image img-fluid {% endif %}" src="{% if page.featuredImage contains "://" %}{{ page.featuredImage }}{% else %}{{ site.baseurl }}/{{ page.featuredImage }}{% endif %}" alt="{{ page.featuredImageCaption }}">
             {% endif %}
-            <figcaption>{{ page.image1Caption }}</figcaption>
+            <figcaption class="featured-caption">{{ page.featuredImageCaption }}</figcaption>
             </figure>
             {% endif %}
-            <!-- End Post Featured Image1 -->
+            <!-- End Post Featured Image -->
 
             <!-- Post Content -->
             <div class="article-post">
@@ -96,18 +96,6 @@ post_class: post-template
             </div>
             <!-- End Post Content -->
 
-            <!-- Post Featured Image2 -->
-            {% if page.image2 %}
-            <figure>
-            {% if site.lazyimages == "enabled" %}
-            <img class="featured-image img-fluid lazyimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="{% if page.image2 contains "://" %}{{ page.image2 }}{% else %}{{ site.baseurl }}/{{ page.image2 }}{% endif %}" alt="{{ page.image2Caption }}">
-            {% else %}
-            <img class="{% if page.categories[0] == 'Travel' %} featured-image-travel img-fluid {% else %} featured-image img-fluid {% endif %}" src="{% if page.image2 contains "://" %}{{ page.image2 }}{% else %}{{ site.baseurl }}/{{ page.image2 }}{% endif %}" alt="{{ page.image2Caption }}">
-            {% endif %}
-            <figcaption>{{ page.image2Caption }}</figcaption>
-            </figure>
-            {% endif %}
-            <!-- End Post Featured Image2 -->
 
             <!-- Post Strava Record -->
             {% if page.categories[0] == "Travel" and page.stravaRecord != "" %}
@@ -116,20 +104,42 @@ post_class: post-template
             <!-- End Post Strava Record -->
 
             <!-- Post all images -->
+            {% if page.collageImages %}
             <div class="imageCollageRow">
                 <div class="imageCollageColumn">
-                    {% if page.image3 %} <div class="imageContainerWithOverlay"><img src="{{ page.image3 }}" title="{{ page.image3Caption }}"><figcaption>{{ page.image3Caption }}</figcaption></div>{% endif %}
-                    {% if page.image5 %} <div class="imageContainerWithOverlay"><img src="{{ page.image5 }}" title="{{ page.image5Caption }}"><figcaption>{{ page.image5Caption }}</figcaption></div>{% endif %}
-                    {% if page.image7 %} <div class="imageContainerWithOverlay"><img src="{{ page.image7 }}" title="{{ page.image7Caption }}"><figcaption>{{ page.image7Caption }}</figcaption></div>{% endif %}
-                    {% if page.image9 %} <div class="imageContainerWithOverlay"><img src="{{ page.image9 }}" title="{{ page.image9Caption }}"><figcaption>{{ page.image9Caption }}</figcaption></div>{% endif %}
+                    {% assign counter = 0 %}
+                    {% for imageNum in page.collageImages %}
+                        {% assign imageUrl = page[imageNum] %}
+                        {% assign captionVar = imageNum | append: 'Caption' %}
+                        {% assign imageCaption = page[captionVar] %}
+
+                        {% if imageUrl %}
+                            {% assign counter = counter | plus: 1 %}
+                            {% assign isEven = counter | modulo: 2 %}
+                            {% if isEven == 0 %}
+                                {% include flexible_image.html image=imageUrl caption=imageCaption placement="collage" %}
+                            {% endif %}
+                        {% endif %}
+                    {% endfor %}
                 </div>
                 <div class="imageCollageColumn">
-                    {% if page.image4 %} <div class="imageContainerWithOverlay"><img src="{{ page.image4 }}" title="{{ page.image4Caption }}"><figcaption>{{ page.image4Caption }}</figcaption></div>{% endif %}
-                    {% if page.image6 %} <div class="imageContainerWithOverlay"><img src="{{ page.image6 }}" title="{{ page.image6Caption }}"><figcaption>{{ page.image6Caption }}</figcaption></div>{% endif %}
-                    {% if page.image8 %} <div class="imageContainerWithOverlay"><img src="{{ page.image8 }}" title="{{ page.image8Caption }}"><figcaption>{{ page.image8Caption }}</figcaption></div>{% endif %}
-                    {% if page.image10 %} <div class="imageContainerWithOverlay"><img src="{{ page.image10 }}" title="{{ page.image10Caption }}"><figcaption>{{ page.image10Caption }}</figcaption></div>{% endif %}
+                    {% assign counter = 0 %}
+                    {% for imageNum in page.collageImages %}
+                        {% assign imageUrl = page[imageNum] %}
+                        {% assign captionVar = imageNum | append: 'Caption' %}
+                        {% assign imageCaption = page[captionVar] %}
+
+                        {% if imageUrl %}
+                            {% assign counter = counter | plus: 1 %}
+                            {% assign isOdd = counter | modulo: 2 %}
+                            {% if isOdd == 1 %}
+                                {% include flexible_image.html image=imageUrl caption=imageCaption placement="collage" %}
+                            {% endif %}
+                        {% endif %}
+                    {% endfor %}
                 </div>
             </div>
+            {% endif %}
             <!-- End Post all images -->
 
             <!-- Post Like -->
