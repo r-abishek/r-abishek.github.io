@@ -1,29 +1,90 @@
-<!-- begin post -->
-{% assign author = site.authors[post.author] %}
-<div class="imageCollageTravelPageRow">
-    <div class="imageCollageTravelPageColumn">
-        {% for post in site.posts %}
-            {% if post.hidden == false and post.categories[0] == "Travel" %}
-                <a href="#{{ post.hash }}"><img src="{{ post.image1 }}" title="{{ post.image1Caption }}"></a>
+<!--
+    DYNAMIC TRAVEL COLLAGE
+    ======================
+    This template creates a randomized 2-column image collage for the Travel page sidebar.
+
+    HOW IT WORKS:
+    1. Collects all images (image1-image50) from all travel posts
+    2. Excludes featuredImage (which is used for individual post pages)
+    3. Randomizes the order using a deterministic algorithm
+    4. Distributes images across two columns (odd/even positions)
+    5. Preserves hover captions and click-to-post functionality
+-->
+{% comment %}
+Collect all available images from all travel posts (excluding featuredImage)
+{% endcomment %}
+{% assign allImages = '' | split: '' %}
+{% assign allCaptions = '' | split: '' %}
+{% assign allHashes = '' | split: '' %}
+
+{% comment %}
+STEP 1: COLLECT ALL IMAGES
+Loop through all travel posts and collect images image1 through image50
+{% endcomment %}
+{% for post in site.posts %}
+    {% if post.hidden == false and post.categories[0] == "Travel" %}
+        {% comment %}Check for all possible image variables (image1, image2, image3, etc.){% endcomment %}
+        {% for i in (1..50) %}
+            {% assign imageVar = 'image' | append: i %}
+            {% assign captionVar = 'image' | append: i | append: 'Caption' %}
+            {% assign imageUrl = post[imageVar] %}
+            {% assign imageCaption = post[captionVar] %}
+
+            {% if imageUrl and imageUrl != '' %}
+                {% assign allImages = allImages | push: imageUrl %}
+                {% assign allCaptions = allCaptions | push: imageCaption %}
+                {% assign allHashes = allHashes | push: post.hash %}
             {% endif %}
         {% endfor %}
-        {% for post in site.posts %}
-            {% if post.hidden == false and post.categories[0] == "Travel" %}
-                <a href="#{{ post.hash }}"><img src="{{ post.image3 }}" title="{{ post.image3Caption }}"></a>
+    {% endif %}
+{% endfor %}
+
+{% comment %}
+STEP 2: RANDOMIZE IMAGE ORDER
+Use a deterministic shuffle algorithm to mix images from different posts
+This ensures variety while maintaining consistent results across builds
+{% endcomment %}
+{% assign randomizedImages = '' | split: '' %}
+{% assign randomizedCaptions = '' | split: '' %}
+{% assign randomizedHashes = '' | split: '' %}
+
+{% comment %}Use a simple shuffle algorithm based on post order and modulo{% endcomment %}
+{% assign totalImages = allImages.size %}
+{% for i in (0..totalImages) %}
+    {% if i < totalImages %}
+        {% comment %}Use a simple pseudo-random selection based on post order{% endcomment %}
+        {% assign randomIndex = i | times: 7 | plus: 3 | modulo: totalImages %}
+        {% assign randomizedImages = randomizedImages | push: allImages[randomIndex] %}
+        {% assign randomizedCaptions = randomizedCaptions | push: allCaptions[randomIndex] %}
+        {% assign randomizedHashes = randomizedHashes | push: allHashes[randomIndex] %}
+    {% endif %}
+{% endfor %}
+
+{% comment %}
+STEP 3: DISPLAY IN 2-COLUMN LAYOUT
+Distribute randomized images across two columns using odd/even positioning
+{% endcomment %}
+<div class="imageCollageTravelPageRow">
+    <!-- LEFT COLUMN: Images at even positions (0, 2, 4, 6...) -->
+    <div class="imageCollageTravelPageColumn">
+        {% assign counter = 0 %}
+        {% for image in randomizedImages %}
+            {% assign isOdd = counter | modulo: 2 %}
+            {% if isOdd == 0 %}
+                <a href="#{{ randomizedHashes[counter] }}"><img src="{{ image }}" title="{{ randomizedCaptions[counter] }}"></a>
             {% endif %}
+            {% assign counter = counter | plus: 1 %}
         {% endfor %}
     </div>
+    <!-- RIGHT COLUMN: Images at odd positions (1, 3, 5, 7...) -->
     <div class="imageCollageTravelPageColumn">
-        {% for post in site.posts reversed %}
-            {% if post.hidden == false and post.categories[0] == "Travel" %}
-                <a href="#{{ post.hash }}"><img src="{{ post.image2 }}" title="{{ post.image2Caption }}"></a>
+        {% assign counter = 0 %}
+        {% for image in randomizedImages %}
+            {% assign isEven = counter | modulo: 2 %}
+            {% if isEven == 1 %}
+                <a href="#{{ randomizedHashes[counter] }}"><img src="{{ image }}" title="{{ randomizedCaptions[counter] }}"></a>
             {% endif %}
-        {% endfor %}
-        {% for post in site.posts reversed %}
-            {% if post.hidden == false and post.categories[0] == "Travel" %}
-                <a href="#{{ post.hash }}"><img src="{{ post.image4 }}" title="{{ post.image4Caption }}"></a>
-            {% endif %}
+            {% assign counter = counter | plus: 1 %}
         {% endfor %}
     </div>
 </div>
-<!-- end post -->

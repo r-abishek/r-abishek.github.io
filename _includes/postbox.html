@@ -1,17 +1,31 @@
+<!--
+    POST CARD TEMPLATE
+    ==================
+    This template displays individual posts as cards in category pages and post listings.
+
+    IMAGE PRIORITY:
+    1. post.featuredImage (primary - used for book covers, travel hero images)
+    2. post.image1 (fallback - used for travel thumbnails)
+-->
 <!-- begin post -->
 {% assign author = site.authors[post.author] %}
 <div class="col-lg-2 col-md-6 mb-30px card-group">
     <div class="card h-100">
         <div class="maxthumb">
             <a href="{% if post.story == true %} {{ site.baseurl }}{{ post.url }} {% else %} {{ site.baseurl }}/{{ post.categories[0] }}#{{ post.hash }} {% endif %}">
-                {% if post.image1 %}
-
+                <!-- POST THUMBNAIL IMAGE -->
+                {% if post.featuredImage or post.image1 %}
+                    {% comment %}
+                    IMAGE DISPLAY LOGIC:
+                    - Supports both lazy loading and direct image display
+                    - Priority: featuredImage first, then image1 fallback
+                    - Handles both external URLs (contains "://") and local paths
+                    {% endcomment %}
                     {% if site.lazyimages == "enabled" %}
-                        <img class="img-fluid lazyimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="{% if post.image1 contains "://" %}{{ post.image1 }}{% else %}{{ site.baseurl }}/{{ post.image1 }}{% endif %}" alt="{{ post.title }}">
+                        <img class="img-fluid lazyimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="{% if post.featuredImage contains "://" %}{{ post.featuredImage }}{% elsif post.image1 contains "://" %}{{ post.image1 }}{% else %}{{ site.baseurl }}/{% if post.featuredImage %}{{ post.featuredImage }}{% else %}{{ post.image1 }}{% endif %}{% endif %}" alt="{{ post.title }}">
                     {% else %}
-                        <img class="img-fluid" src="{% if post.image1 contains "://" %}{{ post.image1 }}{% else %}{{ site.baseurl }}/{{ post.image1 }}{% endif %}" alt="{{ post.title }}">
+                        <img class="img-fluid" src="{% if post.featuredImage contains "://" %}{{ post.featuredImage }}{% elsif post.image1 contains "://" %}{{ post.image1 }}{% else %}{{ site.baseurl }}/{% if post.featuredImage %}{{ post.featuredImage }}{% else %}{{ post.image1 }}{% endif %}{% endif %}" alt="{{ post.title }}">
                     {% endif %}
-
                 {% endif %}
             </a>
         </div>

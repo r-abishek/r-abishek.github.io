@@ -1,0 +1,20 @@
+<!--
+    SIMPLE IMAGE INCLUDE
+    ====================
+    This template provides a simple way to display images within blog post content.
+    It's a basic version of flexible_image.html without placement options.
+
+    USAGE:
+    - include image.html image=page.image1 caption=page.image1Caption
+    - include image.html src="path/to/image.jpg" caption="Image description"
+-->
+{% if include.src or include.image %}
+{% assign image_src = include.src | default: include.image %}
+{% assign image_caption = include.caption | default: '' %}
+<figure>
+    <img class="featured-image-travel img-fluid" src="{{ image_src }}" alt="{{ image_caption }}">
+    {% if image_caption %}
+    <figcaption class="featured-caption">{{ image_caption }}</figcaption>
+    {% endif %}
+</figure>
+{% endif %}

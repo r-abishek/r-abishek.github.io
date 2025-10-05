@@ -1,3 +1,12 @@
+<!--
+    FEATURED POST BOX TEMPLATE
+    ==========================
+    This template displays featured posts on the Home page in a card format.
+
+    IMAGE PRIORITY:
+    1. post.featuredImage (primary - used for book covers, travel hero images)
+    2. post.image1 (fallback - used for travel thumbnails)
+-->
 <!-- begin post -->
 {% assign author = site.authors[post.author] %}
 <div class="col-md-6 mb-30px">
@@ -5,12 +14,19 @@
         <div class="row h-100">
             <div class="col-12 col-md-12 col-lg-5 pr-lg-0">
                 <div class="h-100">
+                    <!-- POST THUMBNAIL IMAGE -->
                     <div class="wrapthumbnail">
                         <a href="{% if post.story == true %} {{ site.baseurl }}{{ post.url }} {% else %} {{ site.baseurl }}/{{ post.categories[0] }}#{{ post.hash }} {% endif %}">
+                            {% comment %}
+                            IMAGE DISPLAY LOGIC:
+                            - Supports both lazy loading and direct image display
+                            - Priority: featuredImage first, then image1 fallback
+                            - Handles both external URLs (contains "://") and local paths
+                            {% endcomment %}
                             {% if site.lazyimages == "enabled" %}
-                            <img class="featured-box-img-cover lazyimg"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="{% if post.image1 contains "://" %}{{ post.image1 }}{% else %}{{ site.baseurl }}/{{ post.image1 }}{% endif %}">
+                            <img class="featured-box-img-cover lazyimg"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="{% if post.featuredImage contains "://" %}{{ post.featuredImage }}{% elsif post.image1 contains "://" %}{{ post.image1 }}{% else %}{{ site.baseurl }}/{% if post.featuredImage %}{{ post.featuredImage }}{% else %}{{ post.image1 }}{% endif %}{% endif %}">
                             {% else %}
-                            <img class="featured-box-img-cover" src="{% if post.image1 contains "://" %}{{ post.image1 }}{% else %}{{ site.baseurl }}/{{ post.image1 }}{% endif %}">
+                            <img class="featured-box-img-cover" src="{% if post.featuredImage contains "://" %}{{ post.featuredImage }}{% elsif post.image1 contains "://" %}{{ post.image1 }}{% else %}{{ site.baseurl }}/{% if post.featuredImage %}{{ post.featuredImage }}{% else %}{{ post.image1 }}{% endif %}{% endif %}">
                             {% endif %}
                         </a>
                     </div>

@@ -1,0 +1,41 @@
+<!--
+    FLEXIBLE IMAGE INCLUDE
+    ======================
+    This template provides flexible image placement within blog post content.
+    It supports both inline placement (within post text) and collage placement (bottom gallery).
+
+    USAGE:
+    - Inline: include flexible_image.html image=page.image1 caption=page.image1Caption placement="inline"
+    - Collage: include flexible_image.html image=page.image2 caption=page.image2Caption placement="collage"
+
+    PLACEMENT OPTIONS:
+    - "inline": Displays image within post content with full styling
+    - "collage": Displays image in bottom gallery with overlay effects
+-->
+{% comment %}
+Flexible Image Include - Supports both inline and collage placement
+Usage:
+  - include flexible_image.html image=page.image1 caption=page.image1Caption placement="inline"
+  - include flexible_image.html image=page.image2 caption=page.image2Caption placement="collage"
+  - include flexible_image.html image=page.image3 caption=page.image3Caption placement="inline"
+{% endcomment %}
+
+{% if include.image %}
+  {% comment %}INLINE PLACEMENT: Full-width image within post content{% endcomment %}
+  {% if include.placement == "inline" %}
+    <figure>
+      <img class="featured-image-travel img-fluid" src="{{ include.image }}" alt="{{ include.caption | default: '' }}">
+      {% if include.caption %}
+      <figcaption class="featured-caption">{{ include.caption }}</figcaption>
+      {% endif %}
+    </figure>
+  {% comment %}COLLAGE PLACEMENT: Smaller image for bottom gallery{% endcomment %}
+  {% elsif include.placement == "collage" %}
+    <div class="imageContainerWithOverlay">
+      <img src="{{ include.image }}" title="{{ include.caption | default: '' }}">
+      {% if include.caption %}
+      <figcaption class="featured-caption">{{ include.caption }}</figcaption>
+      {% endif %}
+    </div>
+  {% endif %}
+{% endif %}

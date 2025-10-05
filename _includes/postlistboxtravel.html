@@ -1,3 +1,15 @@
+<!--
+    TRAVEL POST LIST BOX TEMPLATE
+    =============================
+    This template displays travel posts in a list format on the Travel page.
+    It's specifically designed for travel posts with special features like Google Reviews.
+
+    SPECIAL FEATURES:
+    - Links to Google Reviews when post.story != true
+    - Uses featuredImage for all travel posts
+    - Includes image overlay with captions
+    - Travel-specific styling and layout
+-->
 <!-- begin post -->
 {% assign author = site.authors[post.author] %}
 <div class="col-md-12 mb-30px">
@@ -5,14 +17,22 @@
         <div class="row h-100">
             <div class="col-12 col-md-12 col-lg-5 pr-lg-0">
                 <div class="h-100">
+                    <!-- TRAVEL POST THUMBNAIL IMAGE -->
                     <div class="wrapthumbnail">
                         <a href="{% if post.story == true %} {{ site.baseurl }}{{ post.url }} {% else %} {{ post.googleReview }} {% endif %}">
+                            {% comment %}
+                            TRAVEL IMAGE DISPLAY LOGIC:
+                            - Uses featuredImage for all travel posts
+                            - Supports both lazy loading and direct image display
+                            - Includes image overlay with captions for non-lazy loading
+                            - Links to Google Reviews when post.story != true
+                            {% endcomment %}
                             {% if site.lazyimages == "enabled" %}
-                            <img class="postlist-box-img-cover lazyimg"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="{% if post.image1 contains "://" %}{{ post.image1 }}{% else %}{{ site.baseurl }}/{{ post.image1 }}{% endif %}">
+                            <img class="postlist-box-img-cover lazyimg"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="{% if post.featuredImage contains "://" %}{{ post.featuredImage }}{% else %}{{ site.baseurl }}/{{ post.featuredImage }}{% endif %}">
                             {% else %}
                             <div class="imageContainerWithOverlay">
-                                <img class="postlist-box-img-cover" src="{% if post.image1 contains "://" %}{{ post.image1 }}{% else %}{{ site.baseurl }}/{{ post.image1 }}{% endif %}" title="{{ post.image1Caption }}">
-                                <div class="imageOverlay">{{ post.image1Caption }}</div>
+                                <img class="postlist-box-img-cover" src="{% if post.featuredImage contains "://" %}{{ post.featuredImage }}{% else %}{{ site.baseurl }}/{{ post.featuredImage }}{% endif %}" title="{{ post.featuredImageCaption }}">
+                                <div class="imageOverlay">{{ post.featuredImageCaption }}</div>
                             </div>
                             {% endif %}
                         </a>
