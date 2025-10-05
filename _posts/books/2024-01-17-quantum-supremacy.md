@@ -4,7 +4,7 @@ title: "The Dawn of a New Computing Era"
 author: abishek
 categories: [ Books ]
 tags: [nonfiction, science, technology, physics]
-image1: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1669085986i/61965263.jpg"
+featuredImage: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1669085986i/61965263.jpg"
 featured: true
 hidden: false
 story: true

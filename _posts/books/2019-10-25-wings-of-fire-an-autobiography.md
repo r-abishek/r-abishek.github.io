@@ -4,7 +4,7 @@ title: "A personal connection..."
 author: abishek
 categories: [ Books ]
 tags: [nonfiction, memoir]
-image1: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1588286863l/634583._SY475_.jpg"
+featuredImage: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1588286863l/634583._SY475_.jpg"
 featured: false
 hidden: false
 story: true

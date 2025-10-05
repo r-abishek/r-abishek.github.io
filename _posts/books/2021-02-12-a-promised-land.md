@@ -4,7 +4,7 @@ title: "700+ pages / 30 hours of a soothing mellifluous voice!"
 author: abishek
 categories: [ Books ]
 tags: [nonfiction, memoir, politics, history]
-image1: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1600357110l/55361205._SY475_.jpg"
+featuredImage: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1600357110l/55361205._SY475_.jpg"
 featured: true
 hidden: false
 story: true

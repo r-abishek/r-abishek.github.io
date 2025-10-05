@@ -4,7 +4,7 @@ title: "The Daring Mission That Changed History"
 author: abishek
 categories: [ Books ]
 tags: [nonfiction, history, science, space]
-image1: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1502143372i/35414997.jpg"
+featuredImage: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1502143372i/35414997.jpg"
 featured: true
 hidden: false
 story: true

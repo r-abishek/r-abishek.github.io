@@ -4,7 +4,7 @@ title: "A verbose intro to the 21stcentury flat tech world"
 author: abishek
 categories: [ Books ]
 tags: [nonfiction, business, history]
-image1: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1442191453l/1911._SY475_.jpg"
+featuredImage: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1442191453l/1911._SY475_.jpg"
 featured: false
 hidden: false
 story: true

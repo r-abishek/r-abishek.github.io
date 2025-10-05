@@ -4,7 +4,7 @@ title: "A great self help book for improving one own and one's workplace product
 author: abishek
 categories: [ Books ]
 tags: [nonfiction, business, selfhelp]
-image1: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1328747566l/6665149.jpg"
+featuredImage: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1328747566l/6665149.jpg"
 featured: false
 hidden: false
 story: true

@@ -4,7 +4,7 @@ title: "A fascinating 'fulfill your curiosity' read!"
 author: abishek
 categories: [ Books ]
 tags: [nonfiction, popscience]
-image1: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1433086293l/21._SY475_.jpg"
+featuredImage: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1433086293l/21._SY475_.jpg"
 featured: false
 hidden: false
 story: true

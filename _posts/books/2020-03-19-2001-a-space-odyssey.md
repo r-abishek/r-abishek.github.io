@@ -4,13 +4,14 @@ title: "The true classic-SciFi"
 author: abishek
 categories: [ Books ]
 tags: [fiction, scifi]
-image1: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1432468943l/70535._SY475_.jpg"
-image2: "https://user-images.githubusercontent.com/52214183/184560105-da066c21-4aef-4d32-b415-4d8d4260f6df.jpg"
-image2Caption: "The famous Utah monolith during the November 2020 timeframe\n(https://en.wikipedia.org/wiki/Utah_monolith)"
+featuredImage: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1432468943l/70535._SY475_.jpg"
+image1: "https://user-images.githubusercontent.com/52214183/184560105-da066c21-4aef-4d32-b415-4d8d4260f6df.jpg"
+image1Caption: "The famous Utah monolith during the November 2020 timeframe\n(https://en.wikipedia.org/wiki/Utah_monolith)"
 featured: false
 hidden: false
 story: true
 rating: 5
+collageImages: ['image1']
 ---
 
 Being one of the most impactful and best selling science fiction novels of the 20th century, ‘2001 A Space Odyssey’ is quite the must read classic for all sci-fi buffs. The structure of the novel is more like a main story narrated as an anthology of smaller stories - each having a rising action, climax, and falling action.
