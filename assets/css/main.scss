@@ -11,3 +11,14 @@
 .post-excerpt p {
     display:inline;
 }
+
+/* Ensure consistent caption styling across all images */
+.featured-caption {
+    font-size: 0.975rem;
+    font-weight: normal;
+    color: #000000;
+    text-align: center;
+    margin-top: 0.5rem;
+    font-style: italic;
+    line-height: 1.4;
+}
