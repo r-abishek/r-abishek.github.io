@@ -32,7 +32,7 @@ image10Caption: ""
 image11: "https://github.com/user-attachments/assets/8722fdb7-8df3-4007-8b4f-cd72486801b9"
 image11Caption: ""
 
-googleReview: "https://goo.gl/maps/museum-of-flight-seattle"
+googleReview: "https://maps.app.goo.gl/gNFhg6fBShFLzc6N7"
 stravaRecord: ""
 featured: true
 hidden: false
